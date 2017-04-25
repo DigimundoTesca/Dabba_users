@@ -3470,8 +3470,7 @@
 	}
 
 	#banner h2 {
-		padding-bottom: 4.5em;
-		/*margin-bottom: 4em;*/
+		padding-bottom: 4em;
 	}
 
 	#banner > .inner {
@@ -4108,6 +4107,11 @@
 		}
 	}
 
+	#header .men:hover span {
+		background-color: #ffffff;
+		color: #D14B26;
+	}
+
 
 	#contact {
 		margin: 0 auto;
@@ -4122,8 +4126,7 @@
 	}
 
 	#contact p {
-		text-align: justify-all;
-		text-decoration: none;
+		text-align: justify;
 	}
 
 	#contact img {
