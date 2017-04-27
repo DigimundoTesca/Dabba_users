@@ -1645,7 +1645,6 @@
 	/* Type */
 
 	body, input, select, textarea {
-		/*background-color: rgb(250,243,237);*/
 		color: #ffffff;
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 17pt;
@@ -3645,6 +3644,7 @@
 		background-image: linear-gradient(15deg, #ffffff 50%, rgb(250,243,237) 50%);
 		/*flex-wrap: wrap;*/
 		text-align: center;
+		vertical-align: middle;
 	}
 
 	#main h1, #main h2, #main h3, #main h4 {
@@ -3687,6 +3687,7 @@
 		width: 45%;
 		display: table-cell;
 		padding-right: 2em;
+		vertical-align: middle;
 	}
 
 	#main .col2{
@@ -4054,22 +4055,6 @@
 		visibility: visible;
 	}
 
-	#team {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		flex-wrap: wrap;
-		align-content: space-around;
-	}
-
-	#team figure {
-		margin: 10px;
-	}
-
-	#team figcaption {
-		background-image: url("../../images/team/bck.jpg");
-	}
-
 	@media screen and (max-width: 1024px) {
 		#team figure {
 			max-width: 50%
@@ -4186,4 +4171,45 @@
 
 	.bord {
 		width: 100%;
+	}
+
+	.pick1 {
+		border-right: 8px solid white;
+		height: 30em;
+		vertical-align: middle;
+		background-image: url('../images/image/bck1.jpg');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+
+	.pick2 {
+		height: 30em;
+		vertical-align: middle;
+		background-image: url('../images/image/bck2.jpg');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.pick2, .pick1{
+		text-align: center;
+		padding-right: 2em;
+		padding-left: 2em;
+	}
+
+	#main .pick p{
+		text-align: center;
+		background-color: rgba(255,255,255,0.3);
+		font-family: "Roboto", Helvetica, sans-serif;
+		font-size: 20pt;
+		font-weight: 300;
+		letter-spacing: 0.05em;
+		line-height: 1.65;
+	}
+
+	#main .pick h2{
+		text-align: center;
+		background-color: rgba(255,255,255,0.3);
 	}
