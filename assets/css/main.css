@@ -1954,10 +1954,10 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgb(250,243,237);
+		background: rgba(255,255,255,0.7);
 		border: none;
 		border-radius: 0;
-		color: inherit;
+		color: #000000 !important;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -1984,8 +1984,8 @@
 	input[type="url"]:focus,
 	select:focus,
 	textarea:focus {
-		border-color: #9bf1ff;
-		box-shadow: 0 0 0 2px #9bf1ff;
+		border-color: #F9A38F;
+		box-shadow: 0 0 0 2px #F9A38F;
 	}
 
 	.select-wrapper {
@@ -3726,23 +3726,23 @@
 	}
 
 	.form input, .form textarea {
-		border: solid 1px rgba(212, 212, 255,1);
+		border: solid 1px #F9A38F;
 	}
 
 	input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-		color: gray;
+		color: #D3D3D3;
 		opacity: 1;
 	}
 	input::-moz-placeholder { /* Firefox 19+ */
-		color: gray;
+		color: #D3D3D3;
 		opacity: 1;
 	}
 	input:-ms-input-placeholder { /* IE 10+ */
-		color: gray;
+		color: #D3D3D3;
 		opacity: 1;
 	}
 	input:-moz-placeholder { /* Firefox 18- */
-		color: gray;
+		color: #D3D3D3;
 		opacity: 1;
 	}
 
@@ -3759,7 +3759,7 @@
 	#main label {
 		margin: 0.8em !important;
 		margin-bottom: -10px !important;
-		color:black;
+		color:rgb(209,75,38);
 		display: block;
 		letter-spacing: 0.1em;
 		font-size: 0.7em;
