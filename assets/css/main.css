@@ -3314,7 +3314,7 @@
 	}
 
 	#header nav .menres {
-		height: 70%;
+		height: 75%;
 		margin-top: auto;
 	}
 
@@ -4238,6 +4238,27 @@
 		background-color: rgba(255,255,255,0.15);
 	}
 
+	#main .regis {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	#main .regis p {
+		text-align: center;
+		background-color: rgba(255,255,255,0.15);
+		color: balck;
+		margin: 0;
+		margin-top: 20px;
+		font-family: "Roboto", Helvetica, sans-serif;
+		font-size: 30pt;
+		font-weight: 400;
+		letter-spacing: 0.05em;
+	}
+
+	#main .regis span {
+		font-weight: 700;
+	}
+
 	.menu .cols p {
 		margin: 1.5em;
 		margin-left: 0;
@@ -4252,8 +4273,6 @@
 	.menu .cols span {
 		color: #D14B26;
 		font-family: "Roboto", Helvetica, sans-serif;
-		/*display: inline-block;
-		text-indent: 30px;*/
 		float: right;
 		text-align: right;
 		font-size: 30pt;
