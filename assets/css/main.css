@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900");
 
 /*
 	Forty by HTML5 UP
@@ -3313,6 +3313,17 @@
 		color: #87c5a4;
 	}
 
+	#header nav .menres {
+		height: 70%;
+		margin-top: auto;
+	}
+
+	#header nav .menres a {
+		text-align: center;
+		padding-left: 18px;
+		line-height: 28px;
+	}
+
 	body.is-loading #header.alt {
 		opacity: 0;
 	}
@@ -4225,4 +4236,36 @@
 	#main .pick h2{
 		text-align: center;
 		background-color: rgba(255,255,255,0.15);
+	}
+
+	.menu .cols p {
+		margin: 1.5em;
+		margin-left: 0;
+		padding-left: 0;
+		background-color: rgba(255,255,255,0.15);
+		font-family: "Roboto", Helvetica, sans-serif;
+		font-weight: 700;
+		font-size: 20pt;
+		line-height: 1px;
+	}
+
+	.menu .cols span {
+		color: #D14B26;
+		font-family: "Roboto", Helvetica, sans-serif;
+		/*display: inline-block;
+		text-indent: 30px;*/
+		float: right;
+		text-align: right;
+		font-size: 30pt;
+		font-weight: 900;
+		letter-spacing: 0.1em;
+	}
+
+	.menu .cols .ref {
+		widows: inherit;
+		margin: -1em;
+		margin-left: 0;
+		font-weight: 400;
+		font-size: 12pt;
+		line-height: 20px;
 	}
