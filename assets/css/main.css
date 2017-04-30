@@ -1940,7 +1940,6 @@
 		font-weight: 600;
 		letter-spacing: 0.25em;
 		margin: 0 0 1em 0;
-		text-transform: uppercase;
 	}
 
 	input[type="text"],
@@ -3314,6 +3313,7 @@
 	}
 
 	#header nav .menres {
+		vertical-align: middle;
 		height: 75%;
 		margin-top: auto;
 	}
@@ -3321,7 +3321,7 @@
 	#header nav .menres a {
 		text-align: center;
 		padding-left: 18px;
-		line-height: 28px;
+		line-height: 35px;
 	}
 
 	body.is-loading #header.alt {
@@ -3754,6 +3754,17 @@
 
 	#main div.col1 input, #main div.col2 {
 		margin: 0.5em;
+	}
+
+	#main label {
+		margin: 0.8em !important;
+		margin-bottom: -10px !important;
+		color:black;
+		display: block;
+		letter-spacing: 0.1em;
+		font-size: 0.7em;
+		font-weight: 600;
+		text-align: left;
 	}
 
 	#main .form p{
