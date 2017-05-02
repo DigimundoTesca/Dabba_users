@@ -1,6 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900");
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Tauri');
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
@@ -17,6 +16,11 @@
 		font: inherit;
 		vertical-align: baseline;
 		z-index: -1;
+
+	}
+
+	html {
+		
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -1646,7 +1650,7 @@
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -1781,7 +1785,7 @@
 
 	code {
 		background: rgba(212, 212, 255, 0.035);
-		font-family: "Merriweather", monospace;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -1789,7 +1793,7 @@
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Merriweather", monospace;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -1960,7 +1964,7 @@
 		color: #000000 !important;
 		display: block;
 		outline: 0;
-		padding: 0 1em;
+		/*padding: 0 1em;*/
 		text-decoration: none;
 		width: 100%;
 	}
@@ -2141,9 +2145,9 @@
 		text-transform: none !important;
 	}
 
-	.icon > .label {
+	/*.icon > .label {
 		display: none;
-	}
+	}*/
 
 	.icon.alt:before {
 		background-color: #ffffff;
@@ -2281,6 +2285,12 @@
 
 	ul.icons li:last-child {
 		padding-right: 0;
+	}
+
+	ul.con li {
+		text-align: left;
+		display: block;
+		font-size: 1em;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -3673,6 +3683,17 @@
 		margin-top: 1em;
 	}
 
+	#main h4 {
+		font-family: 'Tauri', sans-serif;
+		text-transform: uppercase;
+		margin-top: 1em;
+	}
+
+	#main .cont {
+		font-size: 0.75em;
+		line-height: 1.2;
+	}
+
 	#main .bord {
 		margin-top: -40px;
 	}
@@ -3706,6 +3727,11 @@
 		vertical-align: middle;
 	}
 
+	#main .col1 .cont {
+		text-align: left;
+		padding-left: 1em;
+	}
+
 	#main .col2{
 		width: 45%;
 		display: table-cell;
@@ -3720,6 +3746,11 @@
 		color:black;
 	}
 
+	#main .form iframe{
+		padding-top: 2em;
+		padding-bottom: 4.5em;
+	}
+
 	form {
 		display: inline-block;
 		text-align: center;
@@ -3727,23 +3758,29 @@
 
 	.form input, .form textarea {
 		border: solid 1px #F9A38F;
+		margin: 0.5em;
+		padding-left: 0.5em;
 	}
 
 	input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 		color: #D3D3D3;
 		opacity: 1;
+		padding-left: 0.5em;
 	}
 	input::-moz-placeholder { /* Firefox 19+ */
 		color: #D3D3D3;
 		opacity: 1;
+		padding-left: 0.5em;
 	}
 	input:-ms-input-placeholder { /* IE 10+ */
 		color: #D3D3D3;
 		opacity: 1;
+		padding-left: 0.5em;
 	}
 	input:-moz-placeholder { /* Firefox 18- */
 		color: #D3D3D3;
 		opacity: 1;
+		padding-left: 0.5em;
 	}
 
 	#main form.col {
@@ -3757,13 +3794,13 @@
 	}
 
 	#main label {
+		font-family: 'Tauri', sans-serif;
 		margin: 0.8em !important;
 		margin-bottom: -10px !important;
 		color:rgb(209,75,38);
 		display: block;
-		letter-spacing: 0.1em;
+		letter-spacing: 0;
 		font-size: 0.7em;
-		font-weight: 600;
 		text-align: left;
 	}
 
@@ -4178,13 +4215,13 @@
 	#contact .col5 {
 		max-width: 11em;
 		margin: 0;
-		padding: 1em;
+		padding: 0;
 		border: 0;
 		align-self: center;
 	}
 
 	#contact .col6 {
-		max-width: 5em;
+		max-width: 5em !important;
 		margin: 0;
 		padding: 1em;
 		border: 0;
@@ -4237,7 +4274,7 @@
 	#main .pick p{
 		text-align: center;
 		background-color: rgba(255,255,255,0.15);
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 20pt;
 		font-weight: 300;
 		letter-spacing: 0.05em;
@@ -4260,7 +4297,7 @@
 		color: balck;
 		margin: 0;
 		margin-top: 20px;
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 30pt;
 		font-weight: 400;
 		letter-spacing: 0.05em;
@@ -4275,7 +4312,7 @@
 		margin-left: 0;
 		padding-left: 0;
 		background-color: rgba(255,255,255,0.15);
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
 		font-size: 20pt;
 		line-height: 1px;
@@ -4283,7 +4320,7 @@
 
 	.menu .cols span {
 		color: #D14B26;
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		float: right;
 		text-align: right;
 		font-size: 30pt;
@@ -4299,3 +4336,24 @@
 		font-size: 12pt;
 		line-height: 20px;
 	}
+
+
+#contenedor-chingon {
+	background: white;
+	color: #353535;
+	margin: 0 4rem;
+	display: flex;
+	flex-direction: row;
+}
+#contenedor-chingon .product-container{
+	display: flex;
+	width: 30%;
+}
+#contenedor-chingon .product-container img{
+	width: 100%;
+}
+#contenedor-chingon .product-description-cont {
+	display: flex;
+	width: 70%;
+}
+
