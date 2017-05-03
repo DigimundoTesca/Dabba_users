@@ -2145,12 +2145,8 @@
 		text-transform: none !important;
 	}
 
-	/*.icon > .label {
-		display: none;
-	}*/
-
 	.icon.alt:before {
-		background-color: #ffffff;
+		background-color: #FFDED9;
 		border-radius: 100%;
 		color: #242943;
 		display: inline-block;
@@ -2450,38 +2446,63 @@
 	}
 
 	table {
-		margin: 0 0 2em 0;
-		width: 100%;
+		text-align: center;
+		color: #000;
+		margin: 0 auto;
+		margin-top: 3em;
+		width: 60%;
 	}
 
 	table tbody tr {
-		border: solid 1px rgba(212, 212, 255, 0.1);
 		border-left: 0;
 		border-right: 0;
 	}
 
 	table tbody tr:nth-child(2n + 1) {
-		background-color: rgba(212, 212, 255, 0.035);
+		background-color: transparent;
 	}
 
 	table td {
 		padding: 0.75em 0.75em;
 	}
 
+	table span {
+		color: #F86544;
+		font-weight: 600;
+		letter-spacing: 0.15em;
+	}
+
 	table th {
-		color: #ffffff;
-		font-size: 0.9em;
+		font-size: 1.3em;
 		font-weight: 600;
 		padding: 0 0.75em 0.75em 0.75em;
-		text-align: left;
+	}
+
+	th , td {
+		border-right: solid 2px #F86544;
+	}
+
+	td ul {
+		color:#F86544;
+		list-style-position: inside;
+	}
+
+	td li {
+		color: black;
+		margin: 0;
+		padding: 0;
+	}
+
+	.last {
+		border-right: transparent !important;
 	}
 
 	table thead {
-		border-bottom: solid 2px rgba(212, 212, 255, 0.1);
+		border-bottom: solid 2px #F86544;
 	}
 
 	table tfoot {
-		border-top: solid 2px rgba(212, 212, 255, 0.1);
+		border-top: solid 2px #F86544;
 	}
 
 	table.alt {
@@ -2489,7 +2510,7 @@
 	}
 
 	table.alt tbody tr td {
-		border: solid 1px rgba(212, 212, 255, 0.1);
+		border: solid 1px #F86544;
 		border-left-width: 0;
 		border-top-width: 0;
 	}
@@ -2568,7 +2589,7 @@
 		padding: 0 0.9em;
 		text-align: center;
 		text-decoration: none;
-		/*text-transform: uppercase;*/
+		text-transform: uppercase;
 		white-space: nowrap;
 	}
 
@@ -3720,6 +3741,28 @@
 		margin:0 auto;
 	}
 
+	#main div.colr {
+		padding-top: 0em;
+		padding-bottom: 0.5em;
+		width: 80%;
+		margin:0 auto;
+	}
+
+	.col1, .col2 {
+		text-transform: uppercase;
+	}
+
+	.cols p {
+		text-transform: capitalize;
+	}
+
+	.plan {
+		font-weight: 400 !important;
+		font-size: 18px !important;
+		line-height: initial !important;
+		text-align: justify !important;
+	}
+
 	#main .col1 {
 		width: 45%;
 		display: table-cell;
@@ -3737,6 +3780,11 @@
 		display: table-cell;
 		padding-left: 2em;
 		vertical-align: middle;
+	}
+
+	#main .mapr {
+		padding: 0;
+		padding-top: 2em;
 	}
 
 	#main .form {
