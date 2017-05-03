@@ -2470,6 +2470,7 @@
 		color: #F86544;
 		font-weight: 600;
 		letter-spacing: 0.15em;
+		line-height: 3;
 	}
 
 	table th {
@@ -2583,9 +2584,9 @@
 		display: inline-block;
 		font-size: 0.8em;
 		font-weight: 600;
-		height: 2em;
-		letter-spacing: 0.3em;
-		line-height: 2em;
+		height: 2em !important;
+		letter-spacing: 0.3em !important;
+		line-height: 2em !important;
 		padding: 0 0.9em;
 		text-align: center;
 		text-decoration: none;
@@ -2595,6 +2596,9 @@
 
 	.sec span {
 		text-transform: uppercase;
+		height: 2em !important;
+		letter-spacing: 0.3em !important;
+		line-height: 2em !important;
 	}
 
 	.button.sec:hover, .button.sec:hover span {
@@ -4225,6 +4229,7 @@
 		display: block;
 		text-decoration: none !important;
 		font-size: 13pt;
+		text-align: left;
 		text-transform: capitalize;
 	}
 
