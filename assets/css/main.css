@@ -2594,6 +2594,13 @@
       white-space: nowrap;
     }
 
+    .nob {
+      margin: 0;
+      padding: 0 !important;
+      line-height: 2.3em !important;
+      box-shadow: none;
+    }
+
     .sec span {
       text-transform: uppercase;
       height: 2em !important;
@@ -3355,6 +3362,10 @@
 
     #header nav .menres input {
       padding: 1em;
+    }
+
+    #header .nob button{
+      border:none !important;
     }
 
     #header nav .menres a {
