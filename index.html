@@ -24,15 +24,6 @@
   
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-  
-  <style type="text/css" media="screen">
-    body {
-      /*font-family: 'Hammersmith One' !important;*/
-    /*font-family: 'Tauri' !important;*/
-    /*font-family: 'Montserrat' !important;*/
-    }
-  </style>
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Candal|Coda+Caption:800|Days+One|Doppio+One|Hammersmith+One|Jockey+One|Monda|Montserrat:400,700,800,900|Ramabhadra|Tauri" rel="stylesheet">
   <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head> 
@@ -40,7 +31,7 @@
   <div id="wrapper">
     <!-- Header -->
     <header id="header" class="alt">
-      <a href="index.html" class="logo"><strong>Dabbawalla</strong><img src="images/bici.png" width="10%"></a>
+      <a href="index.html" class="logo"><strong>Dabbawalla</strong><img src="assets/images/bici.png" width="13%"></a>
       <nav>
         <!-- <a href="#menu" title="">Home</a> -->
         <a href="index.html" class="men"><span> Home </span></a>
@@ -52,13 +43,24 @@
         <a href="" title=""></a>
         <a href="" title=""></a>
         <a href="" title=""></a>
-        <a href="index.html" class="men"><span>Inicia Sesión</span> ó</a>
+        <div class="menres">
+          <a href="#" type="button" value="Inicia Sesión" class="button" data-type="zoomin"><span>Inicia Sesión</span></a>
+        </div>
+        <a href="" title="">ó</a>
         <div class="menres">
           <a href="register.html" class="button"><span>Resgistrate </span></a>
         </div>
         <a >   </a>
       </nav>
     </header>
+    <div class="overlay-container">
+      <div class="window-container zoomin">
+        <h3>Versión en Zoom in</h3> 
+        Texto de la ventana emergente<br/>
+        <br/>
+        <span class="close">Cerrar</span>
+      </div>
+    </div>
     <div>
       <section id="banner" class="main major style2">
         <div class="inner">
@@ -200,5 +202,8 @@
           <script src="assets/js/util.js"></script>
           <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
           <script src="assets/js/main.js"></script>
+
+          <script>!window.jQuery && document.write(unescape('%3Cscript src="assets/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
+          <script type="text/javascript" src="assets/js/demo.js"></script>
         </body>
         </html>
