@@ -4222,7 +4222,10 @@
 	}
 
 	#contact div > a {
+		display: block;
 		text-decoration: none !important;
+		font-size: 13pt;
+		text-transform: capitalize;
 	}
 
 	#contact p {
