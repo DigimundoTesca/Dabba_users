@@ -11,7 +11,7 @@
 <body>
 	<div id="wrapper">
 		<header id="header" class="alt">
-			<a href="index.html" class="logo"><strong>Dabbawalla</strong></a>
+			<a href="index.html" class="logo"><strong>Dabbawalla</strong><img src="assets/images/bici.png" width="13%"></a>
 			<nav>
 				<!-- <a href="#menu" title="">Home</a> -->
 				<a href="index.html" class="men"><span> Home </span></a>
@@ -22,15 +22,34 @@
 				<a href="contact.html" class="men"><span> Contacto </span></a>
 				<a href="" title=""></a>
 				<a href="" title=""></a>
-				<a href="" title=""></a>
-				<a href="index.html" class="men"><span>Inicia Sesión</span> ó</a>
+				<div class="menres nob">
+					<a href="#" type="button" value="Inicia Sesión" class="button nob" data-type="zoomin"><span>Inicia Sesión</span></a>
+				</div>
+				<a href="" title="">ó</a>
 				<div class="menres">
 					<a href="register.html" class="button"><span>Resgistrate </span></a>
 				</div>
 				<a >   </a>
 			</nav>
 		</header>
-
+		<div class="overlay-container">
+			<div class="window-container zoomin">
+				<div class="colm">
+					<h1>LOGIN</h1>
+					<form class="logform" action="" method="post" accept-charset="utf-8">
+						<label>Usuario<input type="text" name="user" id="user" placeholder="Usuario"/></label>
+						<label>Contraseña<input type="text" name="pass" id="pass" placeholder="Contraseña" /></label>
+						<input type="submit" class="" name="submit" value="Login" />
+					</form>
+				</div>
+				<div class="colm2">
+					<h1>Registro</h1>
+					<p>Si aún no te has registrado, te invitamos a que visites nuestra sección de registro y disfrutes de todos los beneficios que tu cuenta te otorga.</p>
+					<a href="register.html" class="button"><span>Resgistrate </span></a>
+				</div>
+				<span class="close">X</span>
+			</div>
+		</div>
 		<div>
 			<div id="main">
 				<div class="cols pick">
@@ -94,5 +113,8 @@
 	<script src="assets/js/util.js"></script>
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="assets/js/main.js"></script>
+
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="assets/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
+	<script type="text/javascript" src="assets/js/demo.js"></script>
 </body>
 </html>
