@@ -1964,7 +1964,7 @@
       color: #000000 !important;
       display: block;
       outline: 0;
-      /*padding: 0 1em;*/
+      padding: 0 1em;
       text-decoration: none;
       width: 100%;
     }
@@ -3831,22 +3831,18 @@
     input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: #D3D3D3;
       opacity: 1;
-      padding-left: 0.5em;
     }
     input::-moz-placeholder { /* Firefox 19+ */
       color: #D3D3D3;
       opacity: 1;
-      padding-left: 0.5em;
     }
     input:-ms-input-placeholder { /* IE 10+ */
       color: #D3D3D3;
       opacity: 1;
-      padding-left: 0.5em;
     }
     input:-moz-placeholder { /* Firefox 18- */
       color: #D3D3D3;
       opacity: 1;
-      padding-left: 0.5em;
     }
 
     #main form.col {
@@ -4473,7 +4469,8 @@
       font-family: 'Montserrat', sans-serif;      
       font-weight: normal;
       font-size: 2.5em;
-      text-align: center;
+      text-align: left;
+      padding-left: 1em;
     }
 
     .window-container p {
@@ -4482,9 +4479,11 @@
     }
     
     .close {
-      margin: 1em auto;
-      display: block;
-      width: 80px;
+      top: -15px;
+      right: -20px;
+      position: absolute;
+      width: 40px;
+      height: 40px;
       text-align: center;
       background: #D14B26;
       background: -moz-linear-gradient(top,  #D14B26 0%, #FF9375 40%, #ED582F 100%);
@@ -4495,13 +4494,13 @@
       background: linear-gradient(to bottom,  #D14B26 0%,#FF9375 40%,#ED582F 100%); 
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D14B26', endColorstr='#ED582F',GradientType=0 );
       border: 1px solid #aaa;
-      padding: 5px 14px;
+      padding: 8px 14px;
       color: #fff;
       font-family: 'Tauri', sans-serif !important;
-      font-size: 12px;
+      font-size: 15px;
       font-weight: 700;
       letter-spacing: 0.2em;
-      border-radius: 3px;
+      border-radius: 100px;
       box-shadow: 0 1px 5px #ddd;
       -webkit-transition: 0.2s linear;
       -moz-transition: 0.2s linear;
@@ -4536,11 +4535,33 @@
       box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
     }
 
+    .logform {
+      display: block;
+      margin: 2em;
+    }
+
+    .logform label {
+      color:#D14B26;
+      background-color: rgba(255,255,255,0.1);
+      display: inline-flex;
+      line-height: 3.5;
+      font-size: 0.8em;
+      font-weight: 600;
+      letter-spacing: 0;
+      margin: 0 0 2em 0;
+    }
+
+    .logform input {
+      margin-left: 30px;
+    }
+
     .colm {
       width: 500px;
       height: 90%;
       border: 1px solid red;
+      vertical-align: middle;
     }
+
 
     .colm2 {
       width: 340px;
