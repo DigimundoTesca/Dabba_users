@@ -1848,7 +1848,6 @@
 
     header.major > :first-child:after {
       content: '';
-      background-color: #ffffff;
       display: block;
       height: 2px;
       margin: 0.325em 0 0.5em 0;
@@ -3476,6 +3475,16 @@
       margin-bottom: -2.2em;
     }
 
+    #banner.build {
+      background-image: url("../images/image/build.jpg");
+      top: 0;
+      margin-bottom: -1.5em;
+    }
+
+    #banner.build .inner {
+      margin-right: 30px;
+    }
+
     #banner {
       -moz-align-items: center;
       -webkit-align-items: center;
@@ -3603,18 +3612,22 @@
 
     #banner.style1:after {
       background-color: #6fc3df;
+      opacity: 0.6;
     }
 
     #banner.style2:after {
-      background-color: rgba(0,0,0,0.8);
+      background-color: #F7AD7A;
+      opacity: 0.6;
     }
 
     #banner.style3:after {
       background-color: #ec8d81;
+      opacity: 0.6;
     }
 
     #banner.style4:after {
       background-color: #e7b788;
+      opacity: 0.6;
     }
 
     #banner.style5:after {
@@ -3624,6 +3637,7 @@
 
     #banner.style6:after {
       background-color: #87c5a4;
+      opacity: 0.6;
     }
 
     body.is-loading #banner:after {
@@ -3768,6 +3782,18 @@
       padding-bottom: 0.5em;
       width: 80%;
       margin:0 auto;
+    }
+
+    .bcol {
+      display: flex;
+      flex-flow: row;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      text-transform: uppercase;
     }
 
     .col1, .col2 {
