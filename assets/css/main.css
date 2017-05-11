@@ -3784,14 +3784,17 @@
       margin:0 auto;
     }
 
+    .bcols {
+      border-top: solid 0px rgba(212, 212, 255, 1);
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 2em;
+      padding-bottom: 2em;
+    }
+
     .bcol {
-      display: flex;
-      flex-flow: row;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      align-items: center;
-      align-content: center;
+      display: inline-flex;
       text-align: center;
       text-transform: uppercase;
     }
@@ -3809,6 +3812,11 @@
       font-size: 18px !important;
       line-height: initial !important;
       text-align: justify !important;
+    }
+
+    #main.col {
+      width: 100%;
+      margin: 0 auto;
     }
 
     #main .col1 {
