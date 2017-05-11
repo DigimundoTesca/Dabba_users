@@ -2569,6 +2569,10 @@
       color: #fff !important;
     }
 
+    .button.esp {
+      font-size: 1em;
+    }
+
     .button.sec {
       -moz-appearance: none;
       -webkit-appearance: none;
@@ -3867,7 +3871,7 @@
 
     #main .form iframe{
       padding-top: 2em;
-      padding-bottom: 4.5em;
+      padding-bottom: 1em;
     }
 
     form {
@@ -4634,5 +4638,5 @@
     .cube {
       width: 100%;
       margin: 0 auto;
-      min-height: 40em;
+      min-height: 37em;
     }
