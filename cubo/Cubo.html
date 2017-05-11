@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es" class=" js csstransforms3d">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <!-- disable zooming -->
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=0">
+
+  <title>Cloud Kitchen Imagenes</title>
+
+  <link rel="stylesheet" href="carousel/style.css" media="screen">
+
+
+  <style media="screen">
+
+    .container {
+      width: 800px;
+      height: 450px;
+      /*position: absolute;*/
+      display: block;
+      margin: 0 auto 50px;
+      border: 1px solid #CCC;
+      -webkit-perspective: 1000px;
+      -moz-perspective: 1000px;
+      -o-perspective: 1000px;
+      perspective: 1000px;
+    }
+
+    #cube {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 1s;
+      -moz-transition: -moz-transform 1s;
+      -o-transition: -o-transform 1s;
+      transition: transform 1s;
+    }
+
+    #cube figure {
+      display: block;
+      position: absolute;
+      width: 800px;
+      height: 450px;
+      border: 2px solid black;
+      line-height: 600px;
+      font-size: 120px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+
+    #cube img {
+      width: 800px;
+    }
+
+    /*#cube.panels-backface-invisible figure {*/
+      #cube figure {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      #cube .front  { background: hsla(   0, 100%, 50%, 0.7 ); }
+      #cube .back   { background: hsla(  60, 100%, 50%, 0.7 ); }
+      #cube .right  { background: hsla( 120, 100%, 50%, 0.7 ); }
+      #cube .left   { background: hsla( 180, 100%, 50%, 0.7 ); }
+      #cube .top    { background: hsla( 240, 100%, 50%, 0.7 ); }
+      #cube .bottom { background: hsla( 300, 100%, 50%, 0.7 ); }
+
+      #cube .front  {
+        -webkit-transform: translateZ( 300px );
+        -moz-transform: translateZ( 300px );
+        -o-transform: translateZ( 300px );
+        transform: translateZ( 300px );
+      }
+      #cube .back   {
+        -webkit-transform: rotateX( -180deg ) translateZ( 300px );
+        -moz-transform: rotateX( -180deg ) translateZ( 300px );
+        -o-transform: rotateX( -180deg ) translateZ( 300px );
+        transform: rotateX( -180deg ) translateZ( 300px );
+      }
+      #cube .right {
+        -webkit-transform: rotateY(   90deg ) translateZ( 300px );
+        -moz-transform: rotateY(   90deg ) translateZ( 300px );
+        -o-transform: rotateY(   90deg ) translateZ( 300px );
+        transform: rotateY(   90deg ) translateZ( 300px );
+      }
+      #cube .left {
+        -webkit-transform: rotateY(  -90deg ) translateZ( 300px );
+        -moz-transform: rotateY(  -90deg ) translateZ( 300px );
+        -o-transform: rotateY(  -90deg ) translateZ( 300px );
+        transform: rotateY(  -90deg ) translateZ( 300px );
+      }
+      #cube .top {
+        -webkit-transform: rotateX(   90deg ) translateZ( 300px );
+        -moz-transform: rotateX(   90deg ) translateZ( 300px );
+        -o-transform: rotateX(   90deg ) translateZ( 300px );
+        transform: rotateX(   90deg ) translateZ( 300px );
+      }
+      #cube .bottom {
+        -webkit-transform: rotateX(  -90deg ) translateZ( 300px );
+        -moz-transform: rotateX(  -90deg ) translateZ( 300px );
+        -o-transform: rotateX(  -90deg ) translateZ( 300px );
+        transform: rotateX(  -90deg ) translateZ( 300px );
+      }
+
+      #cube.show-front {
+        -webkit-transform: translateZ( -100px );
+        -moz-transform: translateZ( -100px );
+        -o-transform: translateZ( -100px );
+        transform: translateZ( -100px );
+      }
+      #cube.show-back {
+        -webkit-transform: translateZ( -100px ) rotateX( -180deg );
+        -moz-transform: translateZ( -100px ) rotateX( -180deg );
+        -o-transform: translateZ( -100px ) rotateX( -180deg );
+        transform: translateZ( -100px ) rotateX( -180deg );
+      }
+      #cube.show-right {
+        -webkit-transform: translateZ( -100px ) rotateY(  -90deg );
+        -moz-transform: translateZ( -100px ) rotateY(  -90deg );
+        -o-transform: translateZ( -100px ) rotateY(  -90deg );
+        transform: translateZ( -100px ) rotateY(  -90deg );
+      }
+      #cube.show-left {
+        -webkit-transform: translateZ( -100px ) rotateY(   90deg );
+        -moz-transform: translateZ( -100px ) rotateY(   90deg );
+        -o-transform: translateZ( -100px ) rotateY(   90deg );
+        transform: translateZ( -100px ) rotateY(   90deg );
+      }
+      #cube.show-top {
+        -webkit-transform: translateZ( -100px ) rotateX(  -90deg );
+        -moz-transform: translateZ( -100px ) rotateX(  -90deg );
+        -o-transform: translateZ( -100px ) rotateX(  -90deg );
+        transform: translateZ( -100px ) rotateX(  -90deg );
+      }
+      #cube.show-bottom {
+        -webkit-transform: translateZ( -100px ) rotateX(   90deg );
+        -moz-transform: translateZ( -100px ) rotateX(   90deg );
+        -o-transform: translateZ( -100px ) rotateX(   90deg );
+        transform: translateZ( -100px ) rotateX(   90deg );
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <h1>Cloud Kitchen</h1>
+
+    <section id="options">
+      <p id="show-buttons">
+        <button class="show-front">Ventas 1</button>
+        <button class="show-back">Ventas 2</button>
+        <!--<button class="show-right">Desayuno</button>-->
+        <!--<button class="show-left">Cocina</button>-->
+        <button class="show-top">Comensales</button>
+        <!--<button class="show-bottom">Show 6</button>-->
+        <br><br><br>
+      </p>
+    </section>
+
+    <section class="container">
+      <div id="cube" class="show-front">
+        <figure class="front"><img src="images/cloud/1.png" alt=""></figure>
+        <figure class="back"><img src="images/cloud/2.png" alt=""></figure>
+        <!--<figure class="right"><img src="images/cloud/3.png" alt=""></figure>-->
+        <!--<figure class="left"><img src="images/cloud/4.png" alt=""></figure>-->
+        <figure class="top"><img src="images/cloud/5.png" alt=""></figure>
+        <!--<figure class="bottom"><img src="images/cloud/bck.jpg" alt=""></figure>-->
+      </div>
+    </section>
+
+
+    <script src="carousel/utils.js"></script>
+    <script src="carousel/rotate-box.js"></script>
+    <footer>
+    </footer>
+
+
+
+  </body></html>

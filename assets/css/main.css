@@ -4615,3 +4615,8 @@
     .colm2 input {
       margin: 0 !important;
     }
+
+    .cube {
+      width: 100%;
+      min-height: 40em;
+    }
