@@ -6,9 +6,9 @@
   <!-- disable zooming -->
   <meta name="viewport" content="initial-scale=1.0, user-scalable=0">
 
-  <title>Cloud Kitchen Imagenes</title>
+  <title>Build Roti</title>
 
-  <link rel="stylesheet" href="carousel/style.css" media="screen">
+  <link rel="stylesheet" href="cubo/carousel/style.css" media="screen">
 
 
   <style media="screen">
@@ -16,7 +16,7 @@
     .container {
       width: 800px;
       height: 450px;
-      /*position: absolute;*/
+      position: absolute;
       display: block;
       margin: 0 auto 50px;
       border: 1px solid #CCC;
@@ -29,7 +29,7 @@
     #cube {
       width: 100%;
       height: 100%;
-      position: absolute;
+      /*position: absolute;*/
       -webkit-transform-style: preserve-3d;
       -moz-transform-style: preserve-3d;
       -o-transform-style: preserve-3d;
@@ -150,16 +150,13 @@
 
   </head>
   <body>
-
-    <h1>Cloud Kitchen</h1>
-
     <section id="options">
       <p id="show-buttons">
-        <button class="show-front">Ventas 1</button>
-        <button class="show-back">Ventas 2</button>
+        <button class="show-front">Roti</button>
+        <button class="show-back">Complemento 1</button>
         <!--<button class="show-right">Desayuno</button>-->
         <!--<button class="show-left">Cocina</button>-->
-        <button class="show-top">Comensales</button>
+        <button class="show-top">Complemento 2</button>
         <!--<button class="show-bottom">Show 6</button>-->
         <br><br><br>
       </p>
@@ -167,7 +164,7 @@
 
     <section class="container">
       <div id="cube" class="show-front">
-        <figure class="front"><img src="images/cloud/1.png" alt=""></figure>
+        <figure class="front"><iframe src="builroti.html"></iframe></figure>
         <figure class="back"><img src="images/cloud/2.png" alt=""></figure>
         <!--<figure class="right"><img src="images/cloud/3.png" alt=""></figure>-->
         <!--<figure class="left"><img src="images/cloud/4.png" alt=""></figure>-->
@@ -177,8 +174,8 @@
     </section>
 
 
-    <script src="carousel/utils.js"></script>
-    <script src="carousel/rotate-box.js"></script>
+    <script src="cubo/carousel/utils.js"></script>
+    <script src="cubo/carousel/rotate-box.js"></script>
     <footer>
     </footer>
 

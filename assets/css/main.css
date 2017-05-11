@@ -3786,11 +3786,17 @@
 
     .bcols {
       border-top: solid 0px rgba(212, 212, 255, 1);
-      width: 80%;
+      width: 90%;
       text-align: center;
       margin: 0 auto;
+      margin-left: 30px;
       margin-top: 2em;
       padding-bottom: 2em;
+    }
+
+    .bcols.col div{
+      width: 50%;
+      display: inline-block;
     }
 
     .bcol {
