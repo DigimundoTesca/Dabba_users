@@ -2531,6 +2531,37 @@
       border-top: 0;
     }
 
+    #pay {
+      width: 50%;
+    }
+
+    #pay thead, #pay tbody,#pay tfoot tr th {
+      border-bottom: solid 3px #000;
+    }
+
+    #pay tfoot tr td span {
+      color: black;
+      margin-left: 1em;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    #pay tfoot tr td img {
+      vertical-align: middle;
+    }
+    #pay tfoot tr td {
+      text-align: left;
+    }
+
+    #pay tfoot tr th {
+      padding-top: 1em;
+    }
+
+    #pay tbody tr td, #pay thead tr th, #pay tfoot tr th, #pay tfoot tr td {
+     border-right: white  !important;
+    }
+
     /* Button */
 
     input[type="submit"],
@@ -2573,7 +2604,7 @@
       font-size: 1em;
     }
 
-    .button.sec {
+    .button.sec, .button.payb {
       -moz-appearance: none;
       -webkit-appearance: none;
       -ms-appearance: none;
@@ -2613,6 +2644,14 @@
       height: 2em !important;
       letter-spacing: 0.3em !important;
       line-height: 2em !important;
+    }
+
+    .payb span {
+      text-transform: capitalize;
+      letter-spacing: 0.3px !important;
+      line-height: 1.7em !important;
+      text-align: center;
+      margin: 0 !important;
     }
 
     .button.sec:hover, .button.sec:hover span {
