@@ -13,7 +13,7 @@ $(document).ready(function() {
 		});
 	});
 	
-	$('.close').click(function() {
+	$('.closeres').click(function() {
 		$('.overlay-container').fadeOut().end().find('.window-container').removeClass('window-container-visible');
 	});
 	

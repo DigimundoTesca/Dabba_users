@@ -4605,7 +4605,7 @@
     background-color: rgba(255,255,255,0.7);
   }
 
-  .close {
+  .closeres {
     top: -15px;
     right: -20px;
     position: absolute;
@@ -4637,7 +4637,7 @@
     cursor: pointer;
   }
 
-  .close:hover {
+  .closeres:hover {
     background: #F77551;
     background: -moz-linear-gradient(top,  #F77551 0%, #F2A691 40%, #FF6B42 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F77551), color-stop(40%,#F2A691), color-stop(100%,#FF6B42));
@@ -4650,7 +4650,7 @@
     border: 2px solid #aaa;
   }
 
-  .close:active {
+  .closeres:active {
     background: #D14B26;
     background: -moz-linear-gradient(top,  #D14B26 0%, #FF9375 40%, #ED582F 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D14B26), color-stop(40%,#FF9375), color-stop(100%,#ED582F));
