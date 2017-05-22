@@ -3895,6 +3895,7 @@
   }
 
   #main .col1 img, #main .col2 img {
+    height: 70%;
     margin: 0 auto;
     margin-top: 50%;
     margin-bottom: 50%;
@@ -4406,19 +4407,30 @@
 
   #contact .col5 {
     max-width: 11em;
+    min-width: 250px;
     margin: 0;
     padding: 0;
     border: 0;
     align-self: center;
   }
 
+  #contact .col5 a {
+    text-align: center !important;
+  }
+
   #contact .col6 {
     max-width: 5em !important;
+    min-width: 100px;
     margin: 0;
     padding: 1em;
+    align-self: center;
     border: 0;
     align-self: center;
     text-decoration: none;
+  }
+
+  #contact .col6 li {
+    margin-top: 10px;
   }
 
   #contact div.col6 .label {
