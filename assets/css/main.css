@@ -3604,6 +3604,10 @@
     padding-bottom: 4em;
   }
 
+  #banner img {
+    width: 340px !important;
+  }
+
   #banner > .inner {
     -moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
     -webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
@@ -3838,6 +3842,7 @@
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    vertical-align: middle;
   }
 
   #main div.colr {
@@ -3877,14 +3882,6 @@
     text-transform: uppercase;
   }
 
-  .col1, .col2 {
-    text-transform: uppercase;
-  }
-
-  .cols p {
-    text-transform: capitalize;
-  }
-
   .plan {
     font-weight: 400 !important;
     font-size: 18px !important;
@@ -3895,6 +3892,12 @@
   #main.col {
     width: 100%;
     margin: 0 auto;
+  }
+
+  #main .col1 img, #main .col2 img {
+    margin: 0 auto;
+    margin-top: 50%;
+    margin-bottom: 50%;
   }
 
   #main .col1 {
