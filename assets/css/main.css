@@ -3911,13 +3911,6 @@
     text-transform: uppercase;
   }
 
-  .plan {
-    font-weight: 400 !important;
-    font-size: 18px !important;
-    line-height: initial !important;
-    text-align: justify !important;
-  }
-
   #main.col {
     width: 100%;
     margin: 0 auto;
@@ -4592,6 +4585,27 @@
   }
 
   #carta.col1, #carta.col2 {
+    vertical-align: middle !important;
+  }
+
+  #plan h3 {
+    text-transform: uppercase;
+  }
+
+  #plan p {
+    padding-bottom: 3em;
+  }
+
+  #plan img {
+    height: 100% !important;
+    margin: 0 !important;
+  }
+
+  #plan .planp {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: initial !important;
+    text-align: justify !important;
     vertical-align: middle !important;
   }
 
