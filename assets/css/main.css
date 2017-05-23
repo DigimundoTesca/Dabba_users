@@ -759,6 +759,34 @@
 
     }
 
+    @media screen and (max-width: 1060px) {
+      .window-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,0.1);
+        background-image: url("../images/image/popbck.png");
+        background-repeat: repeat;
+        background-position:center top;
+        background-size: contain;
+        margin: 5em auto;
+        width: 70%;
+        height: 130% !important;
+        padding: 10px 20px 20px;
+        text-align: left;
+        z-index: 3;
+        border-radius: 3px;
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+        -webkit-transition: 0.4s ease-out;
+        -moz-transition: 0.4s ease-out;
+        -ms-transition: 0.4s ease-out;
+        -o-transition: 0.4s ease-out;
+        transition: 0.4s ease-out;
+        opacity: 0;
+      }
+    }
+
     @media screen and (max-width: 980px) {
 
       .row > * {
@@ -1011,6 +1039,32 @@
         font-weight: 400 !important;
         font-size: 12pt !important;
         line-height: 1.5em !important;
+      }
+
+      .window-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,0.1);
+        background-image: url("../images/image/popbck.png");
+        background-repeat: repeat;
+        background-position:center top;
+        background-size: contain;
+        margin: 0 auto;
+        width: 90% !important;
+        height: 150% !important;
+        padding: 10px 20px 20px;
+        text-align: left;
+        z-index: 3;
+        border-radius: 3px;
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+        -webkit-transition: 0.4s ease-out;
+        -moz-transition: 0.4s ease-out;
+        -ms-transition: 0.4s ease-out;
+        -o-transition: 0.4s ease-out;
+        transition: 0.4s ease-out;
+        opacity: 0;
       }
 
       .row > * {
@@ -3963,6 +4017,10 @@
     color:black;
   }
 
+  #main .form .col1 {
+    padding-right: 1em;
+  }
+
   #main .form iframe{
     padding-top: 2em;
     padding-bottom: 1em;
@@ -4749,35 +4807,44 @@
 
   .logform {
     display: block;
-    margin: 2em;
+    margin: 1em;
   }
 
   .logform label {
     color:#D14B26;
-    display: inline-flex;
+    display: block;
+    text-align: left;
     line-height: 3.5;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 600;
     letter-spacing: 0;
-    margin: 0 0 2em 0;
+    margin: 0;
   }
 
   .logform input {
-    margin-left: 30px;
+    margin-left: 10px;
     background-color: rgba(255,255,255,0.9);;
   }
 
+  .logform h1 {
+    display: block;
+  }
+
   .colm {
-    width: 500px;
-    height: 90%;
+    width: 350px;
+    margin: 0 auto;
     border-right: 2px solid red;
     vertical-align: middle;
+    text-align: center !important;
+  }
+
+  .colm input[type="submit"] {
+    margin-top: 1em !important;
   }
 
 
   .colm2 {
     width: 340px;
-    height: 90%;
     padding-left: 1em;
     text-align: center !important;
   }
