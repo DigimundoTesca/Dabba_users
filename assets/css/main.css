@@ -50,7 +50,6 @@
 
     table {
       width: 100%;
-      background-color: white;
       border-collapse: collapse;
       border-spacing: 0;
     }
@@ -3995,7 +3994,7 @@
     max-width: 500px;
     display: table-cell;
     vertical-align: middle;
-    margin: 0 auto;
+    margin: 0 auto !important;
   }
 
   #main .mapr {
