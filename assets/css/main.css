@@ -1322,9 +1322,17 @@
         color:black;
       }
 
-      input#button1 { order: 1 !important; }
-      input#button2 { order: 3 !important; }
-      textarea#button3 { order: 2 !important; }
+      #main form .col1, #main form .col2 {
+        width: 100%;
+      }
+
+      #main form textarea {
+        margin: 0 auto;
+        width: 95%;
+      }
+
+      .sections > :nth-child(1) { order: 2; }
+      .sections > :nth-child(2) { order: 1; }
     }
 
     @media screen and (max-width: 480px) {
