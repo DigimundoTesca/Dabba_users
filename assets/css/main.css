@@ -1333,6 +1333,10 @@
 
       .sections > :nth-child(1) { order: 2; }
       .sections > :nth-child(2) { order: 1; }
+
+      #contact .col2, #contact .col3, #contact .col4, #contact .col5, #contact .col6 {
+        margin: 10px !important;
+      }
     }
 
     @media screen and (max-width: 480px) {
@@ -4537,6 +4541,7 @@
 
   #contact .col2 {
     max-width: 13em;
+    min-width: 200px;
     margin-top: 6em;
     padding: 1em;
     border: 0;
@@ -4544,6 +4549,7 @@
 
   #contact .col3, #contact .col4 {
     max-width: 10em;
+    min-width: 200px;
     margin: 0;
     padding: 1em;
     margin-top: 6em;
