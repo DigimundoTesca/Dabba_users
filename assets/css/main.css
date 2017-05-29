@@ -758,6 +758,24 @@
 
     }
 
+    @media screen and (max-width: 1140px) {
+
+      .window-container {
+        height: 150% !important;
+      }
+      #contact .col1 {
+        border-right: none !important;
+        text-align: center;
+        max-width: 16em;
+        margin: 0;
+        padding: 1em;
+      }
+
+      .colm2 {
+        border-left: none !important;
+      }
+    }
+
     @media screen and (max-width: 1100px) {
       .cardsection {
         justify-content: center !important;
@@ -793,24 +811,6 @@
         -o-transition: 0.4s ease-out;
         transition: 0.4s ease-out;
         opacity: 0;
-      }
-    }
-
-    @media screen and (max-width: 1140px) {
-
-      .window-container {
-        height: 150% !important;
-      }
-      #contact .col1 {
-        border-right: none !important;
-        text-align: center;
-        max-width: 16em;
-        margin: 0;
-        padding: 1em;
-      }
-
-      .colm2 {
-        border-left: none !important;
       }
     }
 
@@ -1564,7 +1564,11 @@
 
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 370px) {
+
+      ul.con span {
+        font-size: 11px;
+      }
 
       .row > * {
         padding: 0 0 0 1.25em;
@@ -2446,6 +2450,10 @@
 
     ul.icons li:last-child {
       padding-right: 0;
+    }
+
+    ul.con {
+      margin-top: 20px;
     }
 
     ul.con li {
@@ -4138,6 +4146,10 @@
     padding-bottom: 1.5em;
   }
 
+  #main .contactcol {
+    max-width: 90% !important;
+  }
+
   #main div.col1 input, #main div.col2 {
     margin: 0.5em;
   }
@@ -4925,6 +4937,10 @@
     flex-direction: row;
     justify-content: center;
   }
+
+  .cardsection > :nth-child(1) { background-color: rgba(243,143,15,0.5); }
+  .cardsection > :nth-child(2) { background-color: rgba(211,23,21,0.5); }
+  .cardsection > :nth-child(3) { background-color: rgba(31,68,120,0.5); }
 
   .card {
     background-color: rgb(250,243,237);
