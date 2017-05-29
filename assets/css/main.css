@@ -4927,7 +4927,9 @@
   }
 
   .card {
+    background-color: rgb(250,243,237);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
     transition: 0.3s;
     width: 360px;
     margin: 0 auto;
@@ -4939,7 +4941,7 @@
   }
 
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
   }
 
   .cardcontainer {
