@@ -23,6 +23,10 @@
       visibility: hidden;
     }
 
+    textarea {
+      resize: none;
+    }
+
     html {
 
     }
