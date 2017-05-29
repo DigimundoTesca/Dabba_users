@@ -4889,7 +4889,7 @@
   .logform input {
     margin-left: 10px;
     background-color: rgba(255,255,255,1);
-    border: 2px solid #F86544;
+    border: 1px solid #F86544;
   }
 
   .logform h1 {
