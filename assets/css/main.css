@@ -1321,6 +1321,10 @@
         padding-top: 1.5em;
         color:black;
       }
+
+      input#button1 { order: 1 !important; }
+      input#button2 { order: 3 !important; }
+      textarea#button3 { order: 2 !important; }
     }
 
     @media screen and (max-width: 480px) {
