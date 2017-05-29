@@ -1355,6 +1355,9 @@
     }
 
     @media screen and (max-width: 480px) {
+      #carta img{
+        width: 75%;      
+      }
 
       .row > * {
         padding: 0 0 0 1.25em;
@@ -1571,8 +1574,16 @@
 
     @media screen and (max-width: 370px) {
 
+      ul.con {
+        margin-left: -1px !important;
+      }
+
+      ul.con li {
+        margin-top: 5px;
+      }
+
       ul.con span {
-        font-size: 11px;
+        font-size: 10px;
       }
 
       .row > * {
@@ -3780,7 +3791,7 @@
   }
 
   #banner img {
-    width: 340px !important;
+    width: 310px !important;
   }
 
   #banner > .inner {
@@ -4090,7 +4101,6 @@
 
   #main .mapr {
     padding-top: -4em;
-    min-width: 250px;
     width: 400px;
     margin: 0 auto;
   }
@@ -4728,10 +4738,6 @@
     font-weight: 400;
     font-size: 12pt;
     line-height: 20px;
-  }
-
-  #carta div {
-    min-width: 300px;
   }
 
 
