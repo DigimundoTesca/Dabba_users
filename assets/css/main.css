@@ -4753,11 +4753,7 @@
     margin: 0 !important;
     margin-top: 10% !important;
   }
-
-  #carta.col1, #carta.col2 {
-    vertical-align: middle !important;
-  }
-
+  
   #plan h3 {
     text-transform: uppercase;
   }
