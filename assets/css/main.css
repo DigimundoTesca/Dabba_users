@@ -4932,9 +4932,10 @@
 
   .colm2 {
     width: 340px;
+    margin: 0 auto;
     padding-left: 1em;
     border-left: 2px solid red;
-    text-align: center !important;
+    text-align: right !important;
   }
 
   .colm2 input {
