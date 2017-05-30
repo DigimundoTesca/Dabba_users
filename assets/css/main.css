@@ -1364,6 +1364,14 @@
         width: 75%;      
       }
 
+      #carta .col1, #carta .col2 {
+        width: 100%;
+      }
+
+      #main .first {
+        width: 90% !important;
+      }
+
       #contact .col6 {
         max-width: 300px !important;
       }
@@ -4753,7 +4761,7 @@
     margin: 0 !important;
     margin-top: 10% !important;
   }
-  
+
   #plan h3 {
     text-transform: uppercase;
   }
