@@ -1067,7 +1067,7 @@
         font-family: 'Montserrat', sans-serif !important;
         float: right !important;
         text-align: right !important;
-        font-size: 20pt !important;
+        font-size: 25px !important;
         font-weight: 900 !important;
         letter-spacing: 0.1em !important;
       }
@@ -1361,6 +1361,10 @@
     @media screen and (max-width: 480px) {
       #carta img{
         width: 75%;      
+      }
+
+      #contact .col6 {
+        max-width: 100% !important;
       }
 
       .row > * {
@@ -4611,8 +4615,7 @@
   }
 
   #contact .col6 {
-    max-width: 5em !important;
-    min-width: 100px;
+    max-width: 5em;
     margin: 0;
     padding: 1em;
     align-self: center;
