@@ -1372,6 +1372,10 @@
         width: 90% !important;
       }
 
+      .index .col1, .index .col2 {
+        margin: 0 !important;
+      }
+
       #contact .col6 {
         max-width: 300px !important;
       }
