@@ -1067,7 +1067,7 @@
         font-family: 'Montserrat', sans-serif !important;
         float: right !important;
         text-align: right !important;
-        font-size: 25px !important;
+        font-size: 23pt !important;
         font-weight: 900 !important;
         letter-spacing: 0.1em !important;
       }
@@ -1077,7 +1077,8 @@
         margin: 0.5em !important;
         margin-left: 0 !important;
         font-weight: 400 !important;
-        font-size: 12pt !important;
+        font-size: 10pt !important;
+        width: 190px;
         line-height: 1.5em !important;
       }
 
@@ -1364,7 +1365,7 @@
       }
 
       #contact .col6 {
-        max-width: 100% !important;
+        max-width: 300px !important;
       }
 
       .row > * {
@@ -4615,7 +4616,7 @@
   }
 
   #contact .col6 {
-    max-width: 5em;
+    max-width: 5em !important;
     margin: 0;
     padding: 1em;
     align-self: center;
