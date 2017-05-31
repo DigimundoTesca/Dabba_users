@@ -1,5 +1,24 @@
 @import url(font-awesome.min.css);
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Tauri');
+@font-face {
+  font-family: 'Conv_Futura';
+  font-weight: normal;
+  font-style: normal;
+  src: url('assets/fonts/Futura.eot');
+  src: local('Conv_Futura'), 
+  url('fonts/Futura.woff') format('woff'),
+  url('fonts/Futura.ttf') format('truetype'), 
+  url('fonts/Futura.svg') format('svg');
+}
+@font-face {
+  font-family: 'Conv_FuturaBold';
+  font-weight: 900;
+  font-style: normal;
+  src: url('assets/fonts/FuturaBold.eot');
+  src: local('Conv_FuturaBold'), 
+  url('fonts/FuturaBold.woff') format('woff'), 
+  url('fonts/FuturaBold.ttf') format('truetype'), 
+  url('fonts/FuturaBold.svg') format('svg');
+}
 /*
     Forty by HTML5 UP
     html5up.net | @ajlkn
@@ -1055,7 +1074,7 @@
       .menu .cols p {
         margin: 0 !important;
         background-color: rgba(255,255,255,0.15) !important;
-        font-family: 'Montserrat', sans-serif !important;
+        font-family:'Conv_Futura',Sans-Serif !important;
         font-weight: 700 !important;
         font-size: 13pt !important;
         line-height: 1.5em !important;
@@ -1064,12 +1083,12 @@
 
       .menu .cols span {
         color: #D14B26 !important;
-        font-family: 'Montserrat', sans-serif !important;
+        font-family:'Conv_Futura',Sans-Serif !important;
         float: right !important;
         text-align: right !important;
         font-size: 23pt !important;
         font-weight: 900 !important;
-        letter-spacing: 0.1em !important;
+        /*letter-spacing: 0.1em !important;*/
       }
 
       .menu .cols .ref {
@@ -1857,10 +1876,10 @@
 
     body, input, select, textarea {
       color: #ffffff;
-      font-family: 'Montserrat', sans-serif;
+      font-family:'Conv_Futura',Sans-Serif !important;
       font-size: 17pt;
       font-weight: 300;
-      letter-spacing: 0.025em;
+      /*letter-spacing: 0.025em;*/
       line-height: 1.65;
     }
 
@@ -1992,7 +2011,7 @@
 
     code {
       background: rgba(212, 212, 255, 0.035);
-      font-family: 'Montserrat', sans-serif;
+      font-family:'Conv_Futura',Sans-Serif !important;
       font-size: 0.9em;
       margin: 0 0.25em;
       padding: 0.25em 0.65em;
@@ -2000,7 +2019,7 @@
 
     pre {
       -webkit-overflow-scrolling: touch;
-      font-family: 'Montserrat', sans-serif;
+      font-family:'Conv_Futura',Sans-Serif !important;
       font-size: 0.9em;
       margin: 0 0 2em 0;
     }
@@ -2064,7 +2083,7 @@
     header.major > p {
       font-size: 0.7em;
       font-weight: 600;
-      letter-spacing: 0.25em;
+      /*letter-spacing: 0.25em;*/
       margin-bottom: 0;
       text-transform: uppercase;
     }
@@ -2148,7 +2167,7 @@
       display: block;
       font-size: 0.8em;
       font-weight: 600;
-      letter-spacing: 0.25em;
+      /*letter-spacing: 0.25em;*/
       margin: 0 0 1em 0;
     }
 
@@ -2679,7 +2698,7 @@
     table span {
       color: #F86544;
       font-weight: 600;
-      letter-spacing: 0.15em;
+      /*letter-spacing: 0.15em;*/
       line-height: 3;
     }
 
@@ -2754,7 +2773,7 @@
       color: black;
       margin-left: 1em;
       font-size: 18px;
-      letter-spacing: 0.5px;
+      /*letter-spacing: 0.5px;*/
       font-weight: 600;
     }
 
@@ -4012,7 +4031,7 @@
   }
 
   #main h4 {
-    font-family: 'Tauri', sans-serif;
+    font-family:'Conv_Futura',Sans-Serif;
     text-transform: uppercase;
     margin-top: 1em;
   }
@@ -4191,7 +4210,7 @@
   }
 
   #main label {
-    font-family: 'Tauri', sans-serif;
+    font-family:'Conv_Futura',Sans-Serif;
     margin: 0.8em !important;
     margin-bottom: -10px !important;
     color:rgb(209,75,38);
@@ -4696,7 +4715,7 @@
     padding-right: 1em;
     margin-top: 1em;
     background-color: rgba(255,255,255,0.15);
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Conv_Futura',Sans-Serif;
     font-size: 20pt;
     font-weight: 300;
     letter-spacing: 0.05em;
@@ -4720,7 +4739,7 @@
     color: balck;
     margin: 0;
     margin-top: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Conv_Futura',Sans-Serif;
     font-size: 30pt;
     font-weight: 400;
     letter-spacing: 0.05em;
@@ -4735,7 +4754,7 @@
     margin-left: 0;
     padding-left: 0;
     background-color: rgba(255,255,255,0.15);
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Conv_Futura',Sans-Serif;
     font-weight: 700;
     font-size: 20pt;
     line-height: 1px;
@@ -4743,7 +4762,7 @@
 
   .menu .cols span {
     color: #D14B26;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Conv_Futura',Sans-Serif;
     float: right;
     text-align: right;
     font-size: 30pt;
@@ -4850,7 +4869,7 @@
   .window-container h1 {
     margin: 0.3em 0 0.5em;
     color: #D14B26;
-    font-family: 'Montserrat', sans-serif;      
+    font-family:'Conv_Futura',Sans-Serif;
     font-weight: normal;
     font-size: 2.5em;
     text-align: left;
@@ -4875,7 +4894,7 @@
     background: #D14B26;
     padding: 8px 14px;
     color: #fff;
-    font-family: 'Tauri', sans-serif !important;
+    font-family:'Conv_Futura',Sans-Serif !important;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.2em;
