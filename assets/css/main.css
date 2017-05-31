@@ -4585,7 +4585,6 @@
     text-align: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    min-height: 65vh;
   }
 
   #contact div > a {
@@ -4977,7 +4976,6 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 50px;
     padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
