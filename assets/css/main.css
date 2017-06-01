@@ -1375,6 +1375,7 @@
 
       #contact .col2, #contact .col3, #contact .col4, #contact .col5, #contact .col6 {
         margin: 10px !important;
+        min-width: 200px;
       }
     }
 
@@ -4579,6 +4580,7 @@
 
   #contact {
     margin: 0 auto;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -4590,9 +4592,9 @@
   #contact div > a {
     display: block;
     text-decoration: none !important;
-    font-size: 13pt;
+    font-size: 11pt;
     text-align: left;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
   #contact p {
@@ -4600,15 +4602,15 @@
   }
 
   #contact img {
-    width: 100%;
+    width: 70%;
   }
 
   #contact .col1 {
+    width: 270px;
     border-right: 2px solid white;
-    text-align: center;
-    max-width: 16em;
+    text-align: left;
     margin: 0;
-    padding: 1em;
+    padding: 0.5em;
   }
 
   #contact h1, #contact h2, #contact h3, #contact h4, #contact span {
@@ -4616,37 +4618,39 @@
   }
 
   #contact .col2 {
-    max-width: 13em;
-    min-width: 200px;
-    margin-top: 6em;
-    padding: 1em;
+    margin-top: 40px;
+    padding: 0.8em;
     border: 0;
   }
 
   #contact .col3, #contact .col4 {
-    max-width: 10em;
-    min-width: 200px;
     margin: 0;
-    padding: 1em;
-    margin-top: 6em;
+    padding: 0.8em;
+    margin-top: 40px;
     border: 0;
   }
 
   #contact .col5 {
-    max-width: 11em;
-    min-width: 250px;
+    width: 100px;
     margin: 0;
     padding: 0;
     border: 0;
+    border: 2px solid white;
     align-self: center;
   }
 
   #contact .col5 a {
-    text-align: center !important;
+    text-align: center;
+  }
+
+  #contact .col5 span {
+    padding: 0.5em;
+    font-size: 16px;
+    font-weight: bold;
   }
 
   #contact .col6 {
-    max-width: 5em;
+    max-width: 56px;
     margin: 0;
     padding: 1em;
     align-self: center;
