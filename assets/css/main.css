@@ -1375,7 +1375,7 @@
 
       #contact .col2, #contact .col3, #contact .col4, #contact .col5 {
         margin: 0 auto;
-        margin: 10px;
+        margin-top: 10px !important;
         min-width: 200px;
       }
       #contact .col5 {
