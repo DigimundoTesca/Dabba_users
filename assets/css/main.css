@@ -1373,9 +1373,18 @@
       .sections > :nth-child(1) { order: 2; }
       .sections > :nth-child(2) { order: 1; }
 
-      #contact .col2, #contact .col3, #contact .col4, #contact .col5, #contact .col6 {
-        margin: 10px !important;
+      #contact .col2, #contact .col3, #contact .col4, #contact .col5 {
+        margin: 0 auto;
+        margin: 10px;
         min-width: 200px;
+      }
+      #contact .col5 {
+        margin-top: 30px !important;
+        margin-bottom: 15px !important;
+      }
+
+      #contact .col5 span {
+        font-size: 20px !important;
       }
     }
 
@@ -2187,7 +2196,7 @@
       background: rgba(255,255,255,0.7);
       border: none;
       border-radius: 0;
-      color: #000000 !important;
+      color: #000000;
       display: block;
       outline: 0;
       padding: 0 1em;
@@ -4603,12 +4612,13 @@
 
   #contact img {
     width: 70%;
+    margin-bottom: 20px;
   }
 
   #contact .col1 {
     width: 270px;
     border-right: 2px solid white;
-    text-align: left;
+    text-align: center;
     margin: 0;
     padding: 0.5em;
   }
@@ -4618,7 +4628,7 @@
   }
 
   #contact .col2 {
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 0.8em;
     border: 0;
   }
@@ -4626,7 +4636,7 @@
   #contact .col3, #contact .col4 {
     margin: 0;
     padding: 0.8em;
-    margin-top: 40px;
+    margin-top: 60px;
     border: 0;
   }
 
@@ -4641,10 +4651,10 @@
 
   #contact .col5 a {
     text-align: center;
+    padding: 0.5em;
   }
 
   #contact .col5 span {
-    padding: 0.5em;
     font-size: 16px;
     font-weight: bold;
   }
