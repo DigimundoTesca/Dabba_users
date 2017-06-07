@@ -4108,7 +4108,7 @@
 
   .product {
     display: inline-block;
-    padding-top: 3em;
+    padding-top: 2em;
   }
   .product p {
     text-align: center;
@@ -4989,7 +4989,7 @@
   .cube {
     width: 100%;
     margin: 0 auto;
-    min-height: 37em;
+    min-height: 35em;
   }
 
   /*Plan cards*/
