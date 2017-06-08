@@ -4120,6 +4120,10 @@
     opacity: 0.9;
   }
 
+  .product img {
+        height: 130px;
+      }
+
   .bcol {
     display: inline-block;
     text-align: center;
@@ -4989,7 +4993,7 @@
   .cube {
     width: 100%;
     margin: 0 auto;
-    min-height: 35em;
+    height: 700px;
   }
 
   /*Plan cards*/
