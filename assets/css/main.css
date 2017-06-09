@@ -1879,6 +1879,26 @@
       background-color: rgba(209,75,38,1); 
     }
 
+    #bckroti {
+      background-color: hsla(  60, 100%, 50%, 0.7 );
+    }
+
+    #bcksalad {
+      background-color: hsla(   0, 100%, 50%, 0.7 );
+    }
+
+    #bcksmooth {
+      background-color: hsla( 180, 100%, 50%, 0.7 );
+    }
+
+    #bckfruit {
+      background-color: hsla( 240, 100%, 50%, 0.7 );
+    }
+
+    #bckjuice {
+      background-color: hsla( 300, 100%, 50%, 0.7 );
+    }
+
     body.is-loading *, body.is-loading *:before, body.is-loading *:after {
       -moz-animation: none !important;
       -webkit-animation: none !important;
