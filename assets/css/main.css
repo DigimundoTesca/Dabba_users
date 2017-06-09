@@ -4730,27 +4730,28 @@
     text-align: center !important;
   }
 
-  .pick1 {
-    max-width: 600px !important;
+  #main .pick a {
+    max-width: 550px !important;
     min-width: 275 !important;
     margin: auto !important;
     height: 30em;
+  }
+
+  .pick1 {
     background-image: url('../images/image/bck1.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 30em;
     text-align: center;
   }
 
   .pick2 {
-    max-width: 600px !important;
-    min-width: 275 !important;
-    margin: auto !important;
-    height: 30em;
     background-image: url('../images/image/bck2.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 30em;
     text-align: center;
   }
 
@@ -4759,7 +4760,7 @@
     padding-left: 1em;
     padding-right: 1em;
     margin-top: 1em;
-    background-color: rgba(255,255,255,0.15);
+    /*background-color: rgba(255,255,255,0.15);*/
     font-family:'Conv_Futura',Sans-Serif;
     font-size: 20pt;
     font-weight: 300;
@@ -4770,7 +4771,7 @@
   #main .pick h2{
     margin-top: 2em;
     text-align: center;
-    background-color: rgba(255,255,255,0.15);
+    /*background-color: rgba(255,255,255,0.15);*/
   }
 
   #main .regis {
