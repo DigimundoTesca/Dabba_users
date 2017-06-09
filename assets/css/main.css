@@ -4748,7 +4748,7 @@
   }
 
   #main .pick a:hover {
-    box-shadow: 5px 10px 20px 5px rgba(31,68,120,0.5);;
+    box-shadow: 5px 10px 20px 5px rgba(31,68,120,0.5);
     border-radius: 10px;
     transition: 0.3s;
     margin: 0 auto;
@@ -4756,6 +4756,7 @@
 
   .pick1 {
     background-image: url('../images/image/bck1.jpg');
+    border-radius: 10px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -4765,6 +4766,7 @@
 
   .pick2 {
     background-image: url('../images/image/bck2.jpg');
+    border-radius: 10px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
