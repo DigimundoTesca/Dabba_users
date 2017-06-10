@@ -4859,6 +4859,7 @@
     min-width: 275 !important;
     margin: auto !important;
     height: 30em;
+    transition: 0.5s ease;
   }
 
   #main .pick a:hover {
