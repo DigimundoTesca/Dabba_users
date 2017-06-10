@@ -4862,8 +4862,7 @@
   }
 
   #main .pick1:hover, #main .pick2:hover {
-    border:solid 5px rgba(31,68,120,1);
-    /* 10px;*/
+    box-shadow: 0 0 0 6px rgba(31,68,120,0.5);
     margin: 0 auto;
   }
 
