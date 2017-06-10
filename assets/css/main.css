@@ -4188,7 +4188,7 @@
   }
 
   #main .col1 {
-    max-width: 500px;
+    width: 450px;
     display: table-cell;
     vertical-align: middle;
     margin: 0 auto;
@@ -4200,7 +4200,7 @@
   }
 
   #main .col2{
-    max-width: 500px;
+    width: 450px;
     display: table-cell;
     vertical-align: middle;
     margin: 0 auto !important;
