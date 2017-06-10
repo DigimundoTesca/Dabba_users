@@ -4859,16 +4859,18 @@
     min-width: 275 !important;
     margin: auto !important;
     height: 30em;
+    
   }
 
-  #main .pick1:hover/*, #main .pick2:hover*/ {
+  #main .pick1, #main .pick2 {
+    -webkit-transition: box-shadow 0.3s ease-in-out;
+    -moz-transition: box-shadow 0.3s ease-in-out;
+    -o-transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  #main .pick1:hover, #main .pick2:hover {
     box-shadow: 0 0 0 6px rgba(31,68,120,0.5);
-    margin: 0 auto;
-  }
-
-  #main .pick2:hover {
-    border: solid 6px rgba(31,68,120,0.5);
-    margin: 0 auto;
   }
 
   .pick1 {
