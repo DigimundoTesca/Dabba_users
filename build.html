@@ -14,16 +14,18 @@
       width: 100%;
       height: 450px;
       display: block;
+      /*position: relative;*/
       margin: 0 auto;
-      -webkit-perspective: 1000px;
-      -moz-perspective: 1000px;
-      -o-perspective: 1000px;
-      perspective: 1000px;
+      -webkit-perspective: 800px;
+      -moz-perspective: 800px;
+      -o-perspective: 800px;
+      perspective: 800px;
     }
 
     #cube {
       width: 100%;
       height: 450px;
+      position: absolute;
       -webkit-transform-style: preserve-3d;
       -moz-transform-style: preserve-3d;
       -o-transform-style: preserve-3d;
@@ -38,7 +40,7 @@
       display: block;
       position: absolute;
       width: 100%;
-      height: 100%;
+      height: 440px;
       text-align: center;
       overflow: scroll;
     }
@@ -224,7 +226,7 @@
         <div class="thecube">
           <section id="options">
             <p id="show-buttons">
-              <button class="show-front">Roti</button>
+              <button  class="show-front">Roti</button>
               <button class="show-back">Ensaladas</button>
               <button class="show-right">Licuados</button>
               <button class="show-left">Fruta</button>
