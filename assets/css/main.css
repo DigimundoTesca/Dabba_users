@@ -4861,8 +4861,13 @@
     height: 30em;
   }
 
-  #main .pick1:hover, #main .pick2:hover {
+  #main .pick1:hover/*, #main .pick2:hover*/ {
     box-shadow: 0 0 0 6px rgba(31,68,120,0.5);
+    margin: 0 auto;
+  }
+
+  #main .pick2:hover {
+    border: solid 6px rgba(31,68,120,0.5);
     margin: 0 auto;
   }
 
