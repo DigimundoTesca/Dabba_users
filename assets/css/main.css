@@ -1138,6 +1138,7 @@
 
       .bcol .col {
         margin: 0;
+        padding-bottom: 30px;
       }
 
       .row > * {
@@ -4166,6 +4167,7 @@
     text-align: center;
     text-transform: uppercase;
     width: 100%;
+    padding-bottom: 30px;
   }
 
   .bcol .col {
