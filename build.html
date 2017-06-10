@@ -12,9 +12,10 @@
 
     .container {
       width: 100%;
-      height: 450px;
+      height: 500px;
       display: block;
-      margin: 0 auto 50px;
+      /*overflow-x: scroll;*/
+      margin: 0 auto;
       -webkit-perspective: 1000px;
       -moz-perspective: 1000px;
       -o-perspective: 1000px;
@@ -23,7 +24,7 @@
 
     #cube {
       width: 100%;
-      height: 100%;
+      height: 500px;
       -webkit-transform-style: preserve-3d;
       -moz-transform-style: preserve-3d;
       -o-transform-style: preserve-3d;
@@ -39,285 +40,286 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      border: 2px solid black;
-      line-height: 600px;
-      font-size: 120px;
-      font-weight: bold;
-      color: white;
       text-align: center;
     }
 
-      #cube figure {
-        -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
-        -o-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
+    iframe {
+      overflow: scroll;
+    }
 
-      #cube .front  { background: hsla(   0, 100%, 50%, 0.7 ); }
-      #cube .back   { background: hsla(  60, 100%, 50%, 0.7 ); }
-      #cube .right  { background: hsla( 120, 100%, 50%, 0.7 ); }
-      #cube .left   { background: hsla( 180, 100%, 50%, 0.7 ); }
-      #cube .top    { background: hsla( 240, 100%, 50%, 0.7 ); }
-      #cube .bottom { background: hsla( 300, 100%, 50%, 0.7 ); }
+    #cube figure {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
 
-      #cube .front  {
-        -webkit-transform: translateZ( 300px );
-        -moz-transform: translateZ( 300px );
-        -o-transform: translateZ( 300px );
-        transform: translateZ( 300px );
-      }
-      #cube .back   {
-        -webkit-transform: rotateX( -180deg ) translateZ( 300px );
-        -moz-transform: rotateX( -180deg ) translateZ( 300px );
-        -o-transform: rotateX( -180deg ) translateZ( 300px );
-        transform: rotateX( -180deg ) translateZ( 300px );
-      }
-      #cube .right {
-        -webkit-transform: rotateY(   90deg ) translateZ( 300px );
-        -moz-transform: rotateY(   90deg ) translateZ( 300px );
-        -o-transform: rotateY(   90deg ) translateZ( 300px );
-        transform: rotateY(   90deg ) translateZ( 300px );
-      }
-      #cube .left {
-        -webkit-transform: rotateY(  -90deg ) translateZ( 300px );
-        -moz-transform: rotateY(  -90deg ) translateZ( 300px );
-        -o-transform: rotateY(  -90deg ) translateZ( 300px );
-        transform: rotateY(  -90deg ) translateZ( 300px );
-      }
-      #cube .top {
-        -webkit-transform: rotateX(   90deg ) translateZ( 300px );
-        -moz-transform: rotateX(   90deg ) translateZ( 300px );
-        -o-transform: rotateX(   90deg ) translateZ( 300px );
-        transform: rotateX(   90deg ) translateZ( 300px );
-      }
-      #cube .bottom {
-        -webkit-transform: rotateX(  -90deg ) translateZ( 300px );
-        -moz-transform: rotateX(  -90deg ) translateZ( 300px );
-        -o-transform: rotateX(  -90deg ) translateZ( 300px );
-        transform: rotateX(  -90deg ) translateZ( 300px );
-      }
+    #cube .front  { background: hsla(   0, 100%, 50%, 0.7 ); }
+    #cube .back   { background: hsla(  60, 100%, 50%, 0.7 ); }
+    #cube .right  { background: hsla( 120, 100%, 50%, 0.7 ); }
+    #cube .left   { background: hsla( 180, 100%, 50%, 0.7 ); }
+    #cube .top    { background: hsla( 240, 100%, 50%, 0.7 ); }
+    #cube .bottom { background: hsla( 300, 100%, 50%, 0.7 ); }
 
-      #cube.show-front {
-        -webkit-transform: translateZ( -100px );
-        -moz-transform: translateZ( -100px );
-        -o-transform: translateZ( -100px );
-        transform: translateZ( -100px );
-      }
-      #cube.show-back {
-        -webkit-transform: translateZ( -100px ) rotateX( -180deg );
-        -moz-transform: translateZ( -100px ) rotateX( -180deg );
-        -o-transform: translateZ( -100px ) rotateX( -180deg );
-        transform: translateZ( -100px ) rotateX( -180deg );
-      }
-      #cube.show-right {
-        -webkit-transform: translateZ( -100px ) rotateY(  -90deg );
-        -moz-transform: translateZ( -100px ) rotateY(  -90deg );
-        -o-transform: translateZ( -100px ) rotateY(  -90deg );
-        transform: translateZ( -100px ) rotateY(  -90deg );
-      }
-      #cube.show-left {
-        -webkit-transform: translateZ( -100px ) rotateY(   90deg );
-        -moz-transform: translateZ( -100px ) rotateY(   90deg );
-        -o-transform: translateZ( -100px ) rotateY(   90deg );
-        transform: translateZ( -100px ) rotateY(   90deg );
-      }
-      #cube.show-top {
-        -webkit-transform: translateZ( -100px ) rotateX(  -90deg );
-        -moz-transform: translateZ( -100px ) rotateX(  -90deg );
-        -o-transform: translateZ( -100px ) rotateX(  -90deg );
-        transform: translateZ( -100px ) rotateX(  -90deg );
-      }
-      #cube.show-bottom {
-        -webkit-transform: translateZ( -100px ) rotateX(   90deg );
-        -moz-transform: translateZ( -100px ) rotateX(   90deg );
-        -o-transform: translateZ( -100px ) rotateX(   90deg );
-        transform: translateZ( -100px ) rotateX(   90deg );
-      }
+    #cube .front  {
+      -webkit-transform: translateZ( 300px );
+      -moz-transform: translateZ( 300px );
+      -o-transform: translateZ( 300px );
+      transform: translateZ( 300px );
+    }
+    #cube .back   {
+      -webkit-transform: rotateX( -180deg ) translateZ( 300px );
+      -moz-transform: rotateX( -180deg ) translateZ( 300px );
+      -o-transform: rotateX( -180deg ) translateZ( 300px );
+      transform: rotateX( -180deg ) translateZ( 300px );
+    }
+    #cube .right {
+      -webkit-transform: rotateY(   90deg ) translateZ( 300px );
+      -moz-transform: rotateY(   90deg ) translateZ( 300px );
+      -o-transform: rotateY(   90deg ) translateZ( 300px );
+      transform: rotateY(   90deg ) translateZ( 300px );
+    }
+    #cube .left {
+      -webkit-transform: rotateY(  -90deg ) translateZ( 300px );
+      -moz-transform: rotateY(  -90deg ) translateZ( 300px );
+      -o-transform: rotateY(  -90deg ) translateZ( 300px );
+      transform: rotateY(  -90deg ) translateZ( 300px );
+    }
+    #cube .top {
+      -webkit-transform: rotateX(   90deg ) translateZ( 300px );
+      -moz-transform: rotateX(   90deg ) translateZ( 300px );
+      -o-transform: rotateX(   90deg ) translateZ( 300px );
+      transform: rotateX(   90deg ) translateZ( 300px );
+    }
+    #cube .bottom {
+      -webkit-transform: rotateX(  -90deg ) translateZ( 300px );
+      -moz-transform: rotateX(  -90deg ) translateZ( 300px );
+      -o-transform: rotateX(  -90deg ) translateZ( 300px );
+      transform: rotateX(  -90deg ) translateZ( 300px );
+    }
 
-    </style>
-  </head>
-  <body>
-    <div id="wrapper" class="menu">
-      <header id="header" class="alt">
-        <a href="index.html" class="logo">Dabbawalla</a>
-        <img src="assets/images/bici.png">
+    #cube.show-front {
+      -webkit-transform: translateZ( -100px );
+      -moz-transform: translateZ( -100px );
+      -o-transform: translateZ( -100px );
+      transform: translateZ( -100px );
+    }
+    #cube.show-back {
+      -webkit-transform: translateZ( -100px ) rotateX( -180deg );
+      -moz-transform: translateZ( -100px ) rotateX( -180deg );
+      -o-transform: translateZ( -100px ) rotateX( -180deg );
+      transform: translateZ( -100px ) rotateX( -180deg );
+    }
+    #cube.show-right {
+      -webkit-transform: translateZ( -100px ) rotateY(  -90deg );
+      -moz-transform: translateZ( -100px ) rotateY(  -90deg );
+      -o-transform: translateZ( -100px ) rotateY(  -90deg );
+      transform: translateZ( -100px ) rotateY(  -90deg );
+    }
+    #cube.show-left {
+      -webkit-transform: translateZ( -100px ) rotateY(   90deg );
+      -moz-transform: translateZ( -100px ) rotateY(   90deg );
+      -o-transform: translateZ( -100px ) rotateY(   90deg );
+      transform: translateZ( -100px ) rotateY(   90deg );
+    }
+    #cube.show-top {
+      -webkit-transform: translateZ( -100px ) rotateX(  -90deg );
+      -moz-transform: translateZ( -100px ) rotateX(  -90deg );
+      -o-transform: translateZ( -100px ) rotateX(  -90deg );
+      transform: translateZ( -100px ) rotateX(  -90deg );
+    }
+    #cube.show-bottom {
+      -webkit-transform: translateZ( -100px ) rotateX(   90deg );
+      -moz-transform: translateZ( -100px ) rotateX(   90deg );
+      -o-transform: translateZ( -100px ) rotateX(   90deg );
+      transform: translateZ( -100px ) rotateX(   90deg );
+    }
 
-
-        <nav id="flomen">
-          <a href="#menu" title=""></a>
-        </nav>
-
-        <!-- Menu -->
-        <nav id="menu">
-          <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pick.html">Escoge tu dabba</a></li>
-            <li><a href="plan.html">Planes</a></li>
-            <li><a href="menu.html">Menú</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-            <li><a href="#" class="button nob" data-type="zoomin"><span>Inicia Sesión</span></a></li>
-            <li><a href="register.html" class="button fit">Resgistrate</a></li>
-          </ul>
-        </nav>
+  </style>
+</head>
+<body>
+  <div id="wrapper" class="menu">
+    <header id="header" class="alt">
+      <a href="index.html" class="logo">Dabbawalla</a>
+      <img src="assets/images/bici.png">
 
 
-        <nav id="mainmenu">
-          <!-- <a href="#menu" title="">Home</a> -->
-          <a href="index.html" class="men"><span> Home </span></a>
-          <!-- <a href="about.html" class="men"><span> Acerca de </span></a> -->
-          <a href="pick.html" class="men"><span> Escoge tu dabba </span></a>
-          <a href="plan.html" class="men"><span> Planes </span></a>
-          <a href="menu.html" class="men"><span> Menú </span></a>
-          <a href="contact.html" class="men"><span> Contacto </span></a>
-          <a href="" title=""></a>
-          <a href="" title=""></a>
-          <div class="menres nob">
-            <a href="#" class="button nob" data-type="zoomin"><span>Inicia Sesión</span></a>
-          </div>
-          <a href="" title="">ó</a>
-          <div class="menres">
-            <a href="register.html" class="button"><span>Resgistrate </span></a>
-          </div>
-          <a >   </a>
-        </nav>
-      </header>
-      <div class="overlay-container">
-        <div class="window-container zoomin">
-          <div class="colm">
-            <h1>LOGIN</h1>
-            <form class="logform" action="" method="post" accept-charset="utf-8">
-              <label>Usuario<input type="text" name="user" id="user" placeholder="Usuario"/></label>
-              <label>Contraseña<input type="text" name="pass" id="pass" placeholder="Contraseña" /></label>
-              <input type="submit" class="" name="submit" value="Login" />
-            </form>
-          </div>
-          <div class="colm2">
-            <h1>Registro</h1>
-            <p>Si aún no te has registrado, te invitamos a que visites nuestra sección de registro y disfrutes de todos los beneficios que tu cuenta te otorga.</p>
-            <a href="register.html" class="button"><span>Resgistrate </span></a>
-          </div>
-          <span class="closeres">X</span>
+      <nav id="flomen">
+        <a href="#menu" title=""></a>
+      </nav>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pick.html">Escoge tu dabba</a></li>
+          <li><a href="plan.html">Planes</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="#" class="button nob" data-type="zoomin"><span>Inicia Sesión</span></a></li>
+          <li><a href="register.html" class="button fit">Resgistrate</a></li>
+        </ul>
+      </nav>
+
+
+      <nav id="mainmenu">
+        <!-- <a href="#menu" title="">Home</a> -->
+        <a href="index.html" class="men"><span> Home </span></a>
+        <!-- <a href="about.html" class="men"><span> Acerca de </span></a> -->
+        <a href="pick.html" class="men"><span> Escoge tu dabba </span></a>
+        <a href="plan.html" class="men"><span> Planes </span></a>
+        <a href="menu.html" class="men"><span> Menú </span></a>
+        <a href="contact.html" class="men"><span> Contacto </span></a>
+        <a href="" title=""></a>
+        <a href="" title=""></a>
+        <div class="menres nob">
+          <a href="#" class="button nob" data-type="zoomin"><span>Inicia Sesión</span></a>
         </div>
+        <a href="" title="">ó</a>
+        <div class="menres">
+          <a href="register.html" class="button"><span>Resgistrate </span></a>
+        </div>
+        <a >   </a>
+      </nav>
+    </header>
+    <div class="overlay-container">
+      <div class="window-container zoomin">
+        <div class="colm">
+          <h1>LOGIN</h1>
+          <form class="logform" action="" method="post" accept-charset="utf-8">
+            <label>Usuario<input type="text" name="user" id="user" placeholder="Usuario"/></label>
+            <label>Contraseña<input type="text" name="pass" id="pass" placeholder="Contraseña" /></label>
+            <input type="submit" class="" name="submit" value="Login" />
+          </form>
+        </div>
+        <div class="colm2">
+          <h1>Registro</h1>
+          <p>Si aún no te has registrado, te invitamos a que visites nuestra sección de registro y disfrutes de todos los beneficios que tu cuenta te otorga.</p>
+          <a href="register.html" class="button"><span>Resgistrate </span></a>
+        </div>
+        <span class="closeres">X</span>
       </div>
-      <div>
-        <section id="banner" class="build major style3">
-          <div class="inner">
-            <header class="inner">
-              <h1>ARMA TU DABBA</h1>
-              <h2>ROTI + 2 Complementos <br>$50</h2>
-            </header>
-          </div>
-        </section>
-      </div>
-      <div id="main">
-        <img class="bord" src="assets/images/image/reverse.png">
-        <div class="bcol">
-            <div class="thecube">
-              <section id="options">
-                <p id="show-buttons">
-                  <button class="show-front">Roti</button>
-                  <button class="show-back">Ensaladas</button>
-                  <button class="show-right">Licuados</button>
-                  <button class="show-left">Fruta</button>
-                  <button class="show-top">Jugos</button>
-                  <!--<button class="show-bottom">Show 6</button>-->
-                </p>
-              </section>
+    </div>
+    <div>
+      <section id="banner" class="build major style3">
+        <div class="inner">
+          <header class="inner">
+            <h1>ARMA TU DABBA</h1>
+            <h2>ROTI + 2 Complementos <br>$50</h2>
+          </header>
+        </div>
+      </section>
+    </div>
+    <div id="main">
+      <img class="bord" src="assets/images/image/reverse.png">
+      <div class="bcol">
+        <div class="thecube">
+          <section id="options">
+            <p id="show-buttons">
+              <button class="show-front">Roti</button>
+              <button class="show-back">Ensaladas</button>
+              <button class="show-right">Licuados</button>
+              <button class="show-left">Fruta</button>
+              <button class="show-top">Jugos</button>
+              <!--<button class="show-bottom">Show 6</button>-->
+            </p>
+          </section>
 
-              <section class="container">
-                <div id="cube" class="show-front">
-                  <figure class="front"><iframe src="buildroti.html"></iframe></figure>
-                  <figure class="back"><iframe src="buildsalad.html"></iframe></figure>
-                  <figure class="right"><iframe src="buildsmooth.html"></iframe></figure>
-                  <figure class="left"><iframe src="buildfruit.html"></iframe></figure>
-                  <figure class="top"><iframe src="buildjuce.html"></iframe></figure>
-                  <!--<figure class="bottom"><img src="images/cloud/bck.jpg" alt=""></figure>-->
-                </div>
-              </section>
+          <section class="container">
+            <div id="cube" class="show-front">
+              <figure class="front">
+                <iframe src="buildroti.html"></iframe>
+              </figure>
+              <figure class="back"><iframe src="buildsalad.html"></iframe></figure>
+              <figure class="right"><iframe src="buildsmooth.html"></iframe></figure>
+              <figure class="left"><iframe src="buildfruit.html"></iframe></figure>
+              <figure class="top"><iframe src="buildjuce.html"></iframe></figure>
+              <!--<figure class="bottom"><img src="images/cloud/bck.jpg" alt=""></figure>-->
             </div>
-            <h2>tu pedido</h2>
-            <table id="pay">
-              <thead>
-                <tr>
-                  <th>ORDEN</th>
-                  <th>CANTIDAD</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Roti</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Agua</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>Fruta</td>
-                  <td>1</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td></td>
-                </tr>
-              </tfoot>
-            </table>
-            <a href="pay.html" class="button esp"><span>ARMA TU DABBA</span></a>
-          </div>
+          </section>
+        </div>
+        <h2>tu pedido</h2>
+        <table id="pay">
+          <thead>
+            <tr>
+              <th>ORDEN</th>
+              <th>CANTIDAD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Roti</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Agua</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Fruta</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+        <a href="pay.html" class="button esp"><span>ARMA TU DABBA</span></a>
       </div>
-      <div id="contact">
-        <div class="col1">
-          <img src="assets/images/logo.png" alt="Logo de Dabbawalla">
-          <p>20 de Noviembre #32,<br>San Lucas Tepelacalco,<br>Tlalnepantla Edo. de México <br>CP 54055</p>
-        </div>
-        <div class="col2">
-          <h3>home</h3>
-          <a href="plan.html" title="Planes">Consigue un plan</a>
-          <a href="menu.html" title="Menú">Conoce nuestro menú</a>
-          <a href="contact.html" title="Dudas">¿Tienes alguna duda?</a>
-        </div>
-        <div class="col3">
-          <h3>Planes</h3>
-          <a href="plan.html" title="Planes">Dabba Coins</a>
-          <a href="plan.html" title="Planes">Dabba Wallet</a>
-          <a href="plan.html" title="Planes">Planes</a>
-        </div>
-        <div class="col4">
-          <h3>Contacto</h3>
-          <a href="contact.html" title="">Contáctanos</a>
-          <!-- <a href="#" title="">Mapa del sitio</a> -->
-        </div>
-        <div class="col5">
-          <a href="pick.html" class=""><span>¡Arma tu <br> dabba!</span></a>
-        </div>
-        <div class="col6">
-          <ul class="icons">
-            <li><a rel="nofollow" target="_blank" href="" class="icon alt fa-facebook"><span class="label"></span></a></li>
-            <li><a rel="nofollow" target="_blank" href="" class="icon alt fa-github"><span class="label"></span></a></li>
-            <li><a href="index.html" class="icon alt fa-home"><span class="label"></span></a></li>
-          </ul>
-        </div>
+    </div>
+    <div id="contact">
+      <div class="col1">
+        <img src="assets/images/logo.png" alt="Logo de Dabbawalla">
+        <p>20 de Noviembre #32,<br>San Lucas Tepelacalco,<br>Tlalnepantla Edo. de México <br>CP 54055</p>
       </div>
-      <footer id="footer">
-        <img class="bord" src="assets/images/image/flechas.png">
-        <p><br>&copy; 2017 Dabbawalla. Todos los derechos reservados.</p>
-      </footer>
-      <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.scrolly.min.js"></script>
-      <script src="assets/js/jquery.scrollex.min.js"></script>
-      <script src="assets/js/skel.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-      <script src="assets/js/main.js"></script>
+      <div class="col2">
+        <h3>home</h3>
+        <a href="plan.html" title="Planes">Consigue un plan</a>
+        <a href="menu.html" title="Menú">Conoce nuestro menú</a>
+        <a href="contact.html" title="Dudas">¿Tienes alguna duda?</a>
+      </div>
+      <div class="col3">
+        <h3>Planes</h3>
+        <a href="plan.html" title="Planes">Dabba Coins</a>
+        <a href="plan.html" title="Planes">Dabba Wallet</a>
+        <a href="plan.html" title="Planes">Planes</a>
+      </div>
+      <div class="col4">
+        <h3>Contacto</h3>
+        <a href="contact.html" title="">Contáctanos</a>
+        <!-- <a href="#" title="">Mapa del sitio</a> -->
+      </div>
+      <div class="col5">
+        <a href="pick.html" class=""><span>¡Arma tu <br> dabba!</span></a>
+      </div>
+      <div class="col6">
+        <ul class="icons">
+          <li><a rel="nofollow" target="_blank" href="" class="icon alt fa-facebook"><span class="label"></span></a></li>
+          <li><a rel="nofollow" target="_blank" href="" class="icon alt fa-github"><span class="label"></span></a></li>
+          <li><a href="index.html" class="icon alt fa-home"><span class="label"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <footer id="footer">
+      <img class="bord" src="assets/images/image/flechas.png">
+      <p><br>&copy; 2017 Dabbawalla. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
 
-      <script>!window.jQuery && document.write(unescape('%3Cscript src="assets/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
-      <script type="text/javascript" src="assets/js/demo.js"></script>
-      <!--Cube-->
-      <script src="cubo/carousel/utils.js"></script>
-      <script src="cubo/carousel/rotate-box.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="assets/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
+    <script type="text/javascript" src="assets/js/demo.js"></script>
+    <!--Cube-->
+    <script src="cubo/carousel/utils.js"></script>
+    <script src="cubo/carousel/rotate-box.js"></script>
 
-    </body>
-    </html>
+  </body>
+  </html>
