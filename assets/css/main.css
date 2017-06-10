@@ -351,7 +351,42 @@
       margin-left: 8.33333%;
     }
 
+    @media screen and (max-width: 2000px) {
+
+      #mainmenu {
+        position: absolute;
+        right: 300px;
+      }
+
+      #header .logo {
+        border: 0;
+        display: inline-block;
+        font-size: 0.8em;
+        height: inherit;
+        line-height: inherit;
+        padding: 0;
+        padding-left: 300px;
+        padding-right: 0.3em;
+      }
+    }
+
     @media screen and (max-width: 1680px) {
+
+      #mainmenu {
+        position: absolute;
+        right: 300px;
+      }
+
+      #header .logo {
+        border: 0;
+        display: inline-block;
+        font-size: 0.8em;
+        height: inherit;
+        line-height: inherit;
+        padding: 0;
+        padding-left: 250px;
+        padding-right: 0.3em;
+      }
 
       .row > * {
         padding: 0 0 0 2em;
@@ -566,7 +601,77 @@
 
     }
 
+    @media screen and (max-width: 1600px) {
+      #mainmenu {
+        position: absolute;
+        right: 250px;
+      }
+
+      #header .logo {
+        border: 0;
+        display: inline-block;
+        font-size: 0.8em;
+        height: inherit;
+        line-height: inherit;
+        padding: 0;
+        padding-left: 200px;
+        padding-right: 0.3em;
+      }
+    }
+
+    @media screen and (max-width: 1500px) {
+      #mainmenu {
+        position: absolute;
+        right: 250px;
+      }
+
+      #header .logo {
+        border: 0;
+        display: inline-block;
+        font-size: 0.8em;
+        height: inherit;
+        line-height: inherit;
+        padding: 0;
+        padding-left: 200px;
+        padding-right: 0.3em;
+      }
+    }
+
+    @media screen and (max-width: 1300px) {
+      #mainmenu {
+        position: absolute;
+        right: 200px;
+      }
+
+      #header .logo {
+        border: 0;
+        display: inline-block;
+        font-size: 0.8em;
+        height: inherit;
+        line-height: inherit;
+        padding: 0;
+        padding-left: 200px;
+        padding-right: 0.3em;
+      }
+    }
+    
     @media screen and (max-width: 1280px) {
+
+      #mainmenu {
+        position: absolute;
+        right: 100px;
+      }
+
+      #header .logo {
+        border: 0;
+        display: inline-block;
+        font-size: 0.8em;
+        height: inherit;
+        line-height: inherit;
+        padding: 0;
+        padding-left: 200px;
+        padding-right: 0.3em;
+      }
 
       .row > * {
         padding: 0 0 0 1.5em;
@@ -782,6 +887,17 @@
     }
 
     @media screen and (max-width: 1140px) {
+
+      #header .logo {
+        border: 0;
+        display: inline-block;
+        font-size: 0.8em;
+        height: inherit;
+        line-height: inherit;
+        padding: 0;
+        padding-left: 80px;
+        padding-right: 0.3em;
+      }
 
       .window-container {
         height: 150% !important;
@@ -3519,17 +3635,6 @@
     z-index: 10000;
   }
 
-  #header .logo {
-    border: 0;
-    display: inline-block;
-    font-size: 0.8em;
-    height: inherit;
-    line-height: inherit;
-    padding: 0;
-    padding-left: 150px;
-    padding-right: 0.3em;
-  }
-
   #header img {
     /*width: 2%;*/
     height: 40%;
@@ -3588,11 +3693,6 @@
 
   #header nav a:last-child {
     padding-right: 1.5em;
-  }
-
-  #mainmenu {
-    position: absolute;
-    right: 20px;
   }
 
   #header nav a[href="#menu"] {
@@ -4750,7 +4850,6 @@
     max-width: 1800px;
     width: 1300px;
     min-width: 300px;
-    /*width: 100% !important;*/
     margin: 0 auto !important;
     text-align: center !important;
   }
@@ -4770,22 +4869,24 @@
   }
 
   .pick1 {
+    width: 450px !important;
     background-image: url('../images/image/bck1.jpg');
     border-radius: 10px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30em;
+    height: 28em;
     text-align: center;
   }
 
   .pick2 {
+    width: 450px !important;
     background-image: url('../images/image/bck2.jpg');
     border-radius: 10px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30em;
+    height: 28em;
     text-align: center;
   }
 
