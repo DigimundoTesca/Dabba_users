@@ -622,7 +622,7 @@
     @media screen and (max-width: 1500px) {
       #mainmenu {
         position: absolute;
-        right: 250px;
+        right: 180px;
       }
 
       #header .logo {
@@ -640,7 +640,7 @@
     @media screen and (max-width: 1300px) {
       #mainmenu {
         position: absolute;
-        right: 200px;
+        right: 150px;
       }
 
       #header .logo {
