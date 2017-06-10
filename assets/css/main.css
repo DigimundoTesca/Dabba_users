@@ -4282,10 +4282,8 @@
   }
 
   #main .col1 img, #main .col2 img {
-    height: 70%;
     margin: 0 auto;
-    margin-top: 50%;
-    margin-bottom: 50%;
+    margin-top: 15%;
   }
 
   #main .col1 {
@@ -4970,6 +4968,10 @@
   #carta img{
     margin: 0 !important;
     margin-top: 10% !important;
+  }
+
+  #carta .col2 {
+    margin-top: 10%;
   }
 
   #plan h3 {
