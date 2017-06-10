@@ -15,10 +15,10 @@
       height: 500px;
       display: block;
       margin: 0 auto;
-      -webkit-perspective: -1000px;
-      -moz-perspective: -1000px;
-      -o-perspective: -1000px;
-      perspective: -1000px;
+      -webkit-perspective: 1000px;
+      -moz-perspective: 1000px;
+      -o-perspective: 1000px;
+      perspective: 1000px;
     }
 
     #cube {
@@ -47,12 +47,12 @@
       overflow: scroll;
     }
 
-    #cube .front  { background: hsla(   0, 100%, 50%, 0.7 ); }
-    #cube .back   { background: hsla(  60, 100%, 50%, 0.7 ); }
-    #cube .right  { background: hsla( 120, 100%, 50%, 0.7 ); }
-    #cube .left   { background: hsla( 180, 100%, 50%, 0.7 ); }
-    #cube .top    { background: hsla( 240, 100%, 50%, 0.7 ); }
-    #cube .bottom { background: hsla( 300, 100%, 50%, 0.7 ); }
+    #cube .front  { background: hsla(   0, 100%, 50%, 1); }
+    #cube .back   { background: hsla(  60, 100%, 50%, 1); }
+    #cube .right  { background: hsla( 120, 100%, 50%, 1); }
+    #cube .left   { background: hsla( 180, 100%, 50%, 1); }
+    #cube .top    { background: hsla( 240, 100%, 50%, 1); }
+    #cube .bottom { background: hsla( 300, 100%, 50%, 1); }
 
     #cube .front  {
       -webkit-transform: translateZ( 300px );
@@ -271,12 +271,63 @@
                   <p>Roti Champiñones agridulces</p>
                   <p class="description">Roti relleno de champiñones con queso manchego y salsa agridulce.</p>
                 </div>
-                <!--<iframe src="buildroti.html"></iframe>-->
               </figure>
-              <figure class="back"><iframe src="buildsalad.html"></iframe></figure>
-              <figure class="right"><iframe src="buildsmooth.html"></iframe></figure>
-              <figure class="left"><iframe src="buildfruit.html"></iframe></figure>
-              <figure class="top"><iframe src="buildjuce.html"></iframe></figure>
+              <figure class="back">
+                <div id="frmelon" class="product">
+                  <img src="assets/images/rotis/melon.jpg">
+                  <p>Ensalada de manzana</p>
+                </div>
+                <div id="frpapaya" class="product">
+                  <img src="assets/images/rotis/papaya.jpg">
+                  <p>Ensalada de fresa</p>
+                </div>
+                <div id="frsandia" class="product">
+                  <img src="assets/images/rotis/sandia.jpg">
+                  <p>Ensalada de apio</p>
+                </div>
+              </figure>
+              <figure class="right">
+                <div id="smoothbanana" class="product">
+                  <img src="assets/images/rotis/melon.jpg">
+                  <p>Licuado de plátano</p>
+                </div>
+                <div id="smoothberry" class="product">
+                  <img src="assets/images/rotis/papaya.jpg">
+                  <p>Licuado de fresa</p>
+                </div>
+                <div id="smoothguaba" class="product">
+                  <img src="assets/images/rotis/sandia.jpg">
+                  <p>Licuado de guayaba</p>
+                </div>
+              </figure>
+              <figure class="left">
+                <div id="frmelon" class="product">
+                  <img src="assets/images/rotis/melon.jpg">
+                  <p>Melón</p>
+                </div>
+                <div id="frpapaya" class="product">
+                  <img src="assets/images/rotis/papaya.jpg">
+                  <p>Papaya</p>
+                </div>
+                <div id="frsandia" class="product">
+                  <img src="assets/images/rotis/sandia.jpg">
+                  <p>Sandía</p>
+                </div>
+              </figure>
+              <figure class="top">
+                <div id="juiceorange" class="product">
+                  <img src="assets/images/rotis/naranja.jpg">
+                  <p>Jugo de naranja</p>
+                </div>
+                <div id="juicegrape" class="product">
+                  <img src="assets/images/rotis/grapefruit.jpg">
+                  <p>Jugo de toronja</p>
+                </div>
+                <div id="juiceberry" class="product">
+                  <img src="assets/images/rotis/berry.jpg">
+                  <p>Jugo de arándano</p>
+                </div>
+              </figure>
               <!--<figure class="bottom"><img src="images/cloud/bck.jpg" alt=""></figure>-->
             </div>
           </section>
