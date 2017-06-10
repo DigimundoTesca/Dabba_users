@@ -225,18 +225,18 @@
         <div class="thecube">
           <section id="options">
             <p id="show-buttons">
-              <button  class="show-front">Roti</button>
+              <button class="show-front" onclick="visible1()">Roti</button>
               <button class="show-back">Ensaladas</button>
               <button class="show-right">Licuados</button>
               <button class="show-left">Fruta</button>
-              <button class="show-top">Jugos</button>
+              <button class="show-top" onclick="visible()">Jugos</button>
               <!--<button class="show-bottom">Show 6</button>-->
             </p>
           </section>
 
           <section class="container">
             <div id="cube" class="show-front">
-              <figure class="front">
+              <figure id="frontdisplay" class="front">
                 <div id="roti1" class="product">
                   <img id="rotimg" src="assets/images/rotis/1.jpg" alt="Imagen para roti">
                   <p>Roti Pollo-Mostaza</p>
@@ -439,6 +439,16 @@
 
     <script>!window.jQuery && document.write(unescape('%3Cscript src="assets/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
     <script type="text/javascript" src="assets/js/demo.js"></script>
+    <script>
+      function visible() {
+        document.getElementById("frontdisplay").style.visibility = "hidden";
+      }
+    </script>
+    <script>
+      function visible1() {
+        document.getElementById("frontdisplay").style.visibility = "visible";
+      }
+    </script>
     <!--Cube-->
     <script src="cubo/carousel/utils.js"></script>
     <script src="cubo/carousel/rotate-box.js"></script>
