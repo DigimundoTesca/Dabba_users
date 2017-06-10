@@ -355,7 +355,7 @@
 
       #mainmenu {
         position: absolute;
-        right: 300px;
+        right: 200px;
       }
 
       #header .logo {
@@ -374,7 +374,7 @@
 
       #mainmenu {
         position: absolute;
-        right: 300px;
+        right: 150px;
       }
 
       #header .logo {
@@ -604,7 +604,7 @@
     @media screen and (max-width: 1600px) {
       #mainmenu {
         position: absolute;
-        right: 250px;
+        right: 100px;
       }
 
       #header .logo {
@@ -622,7 +622,7 @@
     @media screen and (max-width: 1500px) {
       #mainmenu {
         position: absolute;
-        right: 180px;
+        right: 100px;
       }
 
       #header .logo {
@@ -640,7 +640,7 @@
     @media screen and (max-width: 1300px) {
       #mainmenu {
         position: absolute;
-        right: 150px;
+        right: 100px;
       }
 
       #header .logo {
