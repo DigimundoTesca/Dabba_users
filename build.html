@@ -1,118 +1,276 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Dabbawalla Menú</title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="cubo/carousel/style.css" media="screen">
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-</head>
-<body>
-  <div id="wrapper" class="menu">
-    <header id="header" class="alt">
-      <a href="index.html" class="logo">Dabbawalla</a>
-      <img src="assets/images/bici.png">
+  <style media="screen">
+
+    .container {
+      width: 100%;
+      height: 450px;
+      /*position: absolute;*/
+      display: block;
+      margin: 0 auto 50px;
+      border: 1px solid #CCC;
+      -webkit-perspective: 1000px;
+      -moz-perspective: 1000px;
+      -o-perspective: 1000px;
+      perspective: 1000px;
+    }
+
+    #cube {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 1s;
+      -moz-transition: -moz-transform 1s;
+      -o-transition: -o-transform 1s;
+      transition: transform 1s;
+    }
+
+    #cube figure {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 450px;
+      border: 2px solid black;
+      line-height: 600px;
+      font-size: 120px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+
+    #cube img {
+      width: 100%;
+    }
+
+    /*#cube.panels-backface-invisible figure {*/
+      #cube figure {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      #cube .front  { background: hsla(   0, 100%, 50%, 0.7 ); }
+      #cube .back   { background: hsla(  60, 100%, 50%, 0.7 ); }
+      #cube .right  { background: hsla( 120, 100%, 50%, 0.7 ); }
+      #cube .left   { background: hsla( 180, 100%, 50%, 0.7 ); }
+      #cube .top    { background: hsla( 240, 100%, 50%, 0.7 ); }
+      #cube .bottom { background: hsla( 300, 100%, 50%, 0.7 ); }
+
+      #cube .front  {
+        -webkit-transform: translateZ( 300px );
+        -moz-transform: translateZ( 300px );
+        -o-transform: translateZ( 300px );
+        transform: translateZ( 300px );
+      }
+      #cube .back   {
+        -webkit-transform: rotateX( -180deg ) translateZ( 300px );
+        -moz-transform: rotateX( -180deg ) translateZ( 300px );
+        -o-transform: rotateX( -180deg ) translateZ( 300px );
+        transform: rotateX( -180deg ) translateZ( 300px );
+      }
+      #cube .right {
+        -webkit-transform: rotateY(   90deg ) translateZ( 300px );
+        -moz-transform: rotateY(   90deg ) translateZ( 300px );
+        -o-transform: rotateY(   90deg ) translateZ( 300px );
+        transform: rotateY(   90deg ) translateZ( 300px );
+      }
+      #cube .left {
+        -webkit-transform: rotateY(  -90deg ) translateZ( 300px );
+        -moz-transform: rotateY(  -90deg ) translateZ( 300px );
+        -o-transform: rotateY(  -90deg ) translateZ( 300px );
+        transform: rotateY(  -90deg ) translateZ( 300px );
+      }
+      #cube .top {
+        -webkit-transform: rotateX(   90deg ) translateZ( 300px );
+        -moz-transform: rotateX(   90deg ) translateZ( 300px );
+        -o-transform: rotateX(   90deg ) translateZ( 300px );
+        transform: rotateX(   90deg ) translateZ( 300px );
+      }
+      #cube .bottom {
+        -webkit-transform: rotateX(  -90deg ) translateZ( 300px );
+        -moz-transform: rotateX(  -90deg ) translateZ( 300px );
+        -o-transform: rotateX(  -90deg ) translateZ( 300px );
+        transform: rotateX(  -90deg ) translateZ( 300px );
+      }
+
+      #cube.show-front {
+        -webkit-transform: translateZ( -100px );
+        -moz-transform: translateZ( -100px );
+        -o-transform: translateZ( -100px );
+        transform: translateZ( -100px );
+      }
+      #cube.show-back {
+        -webkit-transform: translateZ( -100px ) rotateX( -180deg );
+        -moz-transform: translateZ( -100px ) rotateX( -180deg );
+        -o-transform: translateZ( -100px ) rotateX( -180deg );
+        transform: translateZ( -100px ) rotateX( -180deg );
+      }
+      #cube.show-right {
+        -webkit-transform: translateZ( -100px ) rotateY(  -90deg );
+        -moz-transform: translateZ( -100px ) rotateY(  -90deg );
+        -o-transform: translateZ( -100px ) rotateY(  -90deg );
+        transform: translateZ( -100px ) rotateY(  -90deg );
+      }
+      #cube.show-left {
+        -webkit-transform: translateZ( -100px ) rotateY(   90deg );
+        -moz-transform: translateZ( -100px ) rotateY(   90deg );
+        -o-transform: translateZ( -100px ) rotateY(   90deg );
+        transform: translateZ( -100px ) rotateY(   90deg );
+      }
+      #cube.show-top {
+        -webkit-transform: translateZ( -100px ) rotateX(  -90deg );
+        -moz-transform: translateZ( -100px ) rotateX(  -90deg );
+        -o-transform: translateZ( -100px ) rotateX(  -90deg );
+        transform: translateZ( -100px ) rotateX(  -90deg );
+      }
+      #cube.show-bottom {
+        -webkit-transform: translateZ( -100px ) rotateX(   90deg );
+        -moz-transform: translateZ( -100px ) rotateX(   90deg );
+        -o-transform: translateZ( -100px ) rotateX(   90deg );
+        transform: translateZ( -100px ) rotateX(   90deg );
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="wrapper" class="menu">
+      <header id="header" class="alt">
+        <a href="index.html" class="logo">Dabbawalla</a>
+        <img src="assets/images/bici.png">
 
 
-      <nav id="flomen">
-        <a href="#menu" title=""></a>
-      </nav>
+        <nav id="flomen">
+          <a href="#menu" title=""></a>
+        </nav>
 
-      <!-- Menu -->
-      <nav id="menu">
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pick.html">Escoge tu dabba</a></li>
-          <li><a href="plan.html">Planes</a></li>
-          <li><a href="menu.html">Menú</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-          <li><a href="#" class="button nob" data-type="zoomin"><span>Inicia Sesión</span></a></li>
-          <li><a href="register.html" class="button fit">Resgistrate</a></li>
-        </ul>
-      </nav>
+        <!-- Menu -->
+        <nav id="menu">
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pick.html">Escoge tu dabba</a></li>
+            <li><a href="plan.html">Planes</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="#" class="button nob" data-type="zoomin"><span>Inicia Sesión</span></a></li>
+            <li><a href="register.html" class="button fit">Resgistrate</a></li>
+          </ul>
+        </nav>
 
 
-      <nav id="mainmenu">
-        <!-- <a href="#menu" title="">Home</a> -->
-        <a href="index.html" class="men"><span> Home </span></a>
-        <!-- <a href="about.html" class="men"><span> Acerca de </span></a> -->
-        <a href="pick.html" class="men"><span> Escoge tu dabba </span></a>
-        <a href="plan.html" class="men"><span> Planes </span></a>
-        <a href="menu.html" class="men"><span> Menú </span></a>
-        <a href="contact.html" class="men"><span> Contacto </span></a>
-        <a href="" title=""></a>
-        <a href="" title=""></a>
-        <div class="menres nob">
-          <a href="#" class="button nob" data-type="zoomin"><span>Inicia Sesión</span></a>
+        <nav id="mainmenu">
+          <!-- <a href="#menu" title="">Home</a> -->
+          <a href="index.html" class="men"><span> Home </span></a>
+          <!-- <a href="about.html" class="men"><span> Acerca de </span></a> -->
+          <a href="pick.html" class="men"><span> Escoge tu dabba </span></a>
+          <a href="plan.html" class="men"><span> Planes </span></a>
+          <a href="menu.html" class="men"><span> Menú </span></a>
+          <a href="contact.html" class="men"><span> Contacto </span></a>
+          <a href="" title=""></a>
+          <a href="" title=""></a>
+          <div class="menres nob">
+            <a href="#" class="button nob" data-type="zoomin"><span>Inicia Sesión</span></a>
+          </div>
+          <a href="" title="">ó</a>
+          <div class="menres">
+            <a href="register.html" class="button"><span>Resgistrate </span></a>
+          </div>
+          <a >   </a>
+        </nav>
+      </header>
+      <div class="overlay-container">
+        <div class="window-container zoomin">
+          <div class="colm">
+            <h1>LOGIN</h1>
+            <form class="logform" action="" method="post" accept-charset="utf-8">
+              <label>Usuario<input type="text" name="user" id="user" placeholder="Usuario"/></label>
+              <label>Contraseña<input type="text" name="pass" id="pass" placeholder="Contraseña" /></label>
+              <input type="submit" class="" name="submit" value="Login" />
+            </form>
+          </div>
+          <div class="colm2">
+            <h1>Registro</h1>
+            <p>Si aún no te has registrado, te invitamos a que visites nuestra sección de registro y disfrutes de todos los beneficios que tu cuenta te otorga.</p>
+            <a href="register.html" class="button"><span>Resgistrate </span></a>
+          </div>
+          <span class="closeres">X</span>
         </div>
-        <a href="" title="">ó</a>
-        <div class="menres">
-          <a href="register.html" class="button"><span>Resgistrate </span></a>
-        </div>
-        <a >   </a>
-      </nav>
-    </header>
-    <div class="overlay-container">
-      <div class="window-container zoomin">
-        <div class="colm">
-          <h1>LOGIN</h1>
-          <form class="logform" action="" method="post" accept-charset="utf-8">
-            <label>Usuario<input type="text" name="user" id="user" placeholder="Usuario"/></label>
-            <label>Contraseña<input type="text" name="pass" id="pass" placeholder="Contraseña" /></label>
-            <input type="submit" class="" name="submit" value="Login" />
-          </form>
-        </div>
-        <div class="colm2">
-          <h1>Registro</h1>
-          <p>Si aún no te has registrado, te invitamos a que visites nuestra sección de registro y disfrutes de todos los beneficios que tu cuenta te otorga.</p>
-          <a href="register.html" class="button"><span>Resgistrate </span></a>
-        </div>
-        <span class="closeres">X</span>
       </div>
-    </div>
-    <div>
-      <section id="banner" class="build major style3">
-        <div class="inner">
-          <header class="inner">
-            <h1>ARMA TU DABBA</h1>
-            <h2>ROTI + 2 Complementos <br>$50</h2>
-          </header>
-        </div>
-      </section>
-    </div>
-    <div id="main">
-      <img class="bord" src="assets/images/image/reverse.png">
-      <div class="bcols">
-        <div class="col">
-          <iframe class="cube" src="Cubo.html"></iframe>
-          <h2>tu pedido</h2>
-          <table id="pay">
-            <thead>
-              <tr>
-                <th>ORDEN</th>
-                <th>CANTIDAD</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Roti</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>Agua</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>Fruta</td>
-                <td>1</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-              <td></td>
-              </tr>
+      <div>
+        <section id="banner" class="build major style3">
+          <div class="inner">
+            <header class="inner">
+              <h1>ARMA TU DABBA</h1>
+              <h2>ROTI + 2 Complementos <br>$50</h2>
+            </header>
+          </div>
+        </section>
+      </div>
+      <div id="main">
+        <img class="bord" src="assets/images/image/reverse.png">
+        <div class="bcols">
+          <div class="col">
+            <div class="thecube">
+              <section id="options">
+                <p id="show-buttons">
+                  <button class="show-front">Roti</button>
+                  <button class="show-back">Ensaladas</button>
+                  <button class="show-right">Licuados</button>
+                  <button class="show-left">Fruta</button>
+                  <button class="show-top">Jugos</button>
+                  <!--<button class="show-bottom">Show 6</button>-->
+                </p>
+              </section>
+
+              <section class="container">
+                <div id="cube" class="show-front">
+                  <figure class="front"><iframe src="buildroti.html"></iframe></figure>
+                  <figure class="back"><iframe src="buildsalad.html"></iframe></figure>
+                  <figure class="right"><iframe src="buildsmooth.html"></iframe></figure>
+                  <figure class="left"><iframe src="buildfruit.html"></iframe></figure>
+                  <figure class="top"><iframe src="buildjuce.html"></iframe></figure>
+                  <!--<figure class="bottom"><img src="images/cloud/bck.jpg" alt=""></figure>-->
+                </div>
+              </section>
+            </div>
+            <h2>tu pedido</h2>
+            <table id="pay">
+              <thead>
+                <tr>
+                  <th>ORDEN</th>
+                  <th>CANTIDAD</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Roti</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Agua</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Fruta</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td></td>
+                </tr>
               </tfoot>
             </table>
             <a href="pay.html" class="button esp"><span>ARMA TU DABBA</span></a>
@@ -167,5 +325,9 @@
 
       <script>!window.jQuery && document.write(unescape('%3Cscript src="assets/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
       <script type="text/javascript" src="assets/js/demo.js"></script>
+      <!--Cube-->
+      <script src="cubo/carousel/utils.js"></script>
+      <script src="cubo/carousel/rotate-box.js"></script>
+
     </body>
     </html>
