@@ -14,12 +14,11 @@
       width: 100%;
       height: 500px;
       display: block;
-      /*overflow-x: scroll;*/
       margin: 0 auto;
-      -webkit-perspective: 1000px;
-      -moz-perspective: 1000px;
-      -o-perspective: 1000px;
-      perspective: 1000px;
+      -webkit-perspective: -1000px;
+      -moz-perspective: -1000px;
+      -o-perspective: -1000px;
+      perspective: -1000px;
     }
 
     #cube {
@@ -41,18 +40,11 @@
       width: 100%;
       height: 100%;
       text-align: center;
-      overflow: scroll;
-    }
-
-    iframe {
-      overflow: scroll;
-    }
-
-    #cube figure {
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
       -o-backface-visibility: hidden;
       backface-visibility: hidden;
+      overflow: scroll;
     }
 
     #cube .front  { background: hsla(   0, 100%, 50%, 0.7 ); }
@@ -229,7 +221,57 @@
           <section class="container">
             <div id="cube" class="show-front">
               <figure class="front">
-                <iframe src="buildroti.html"></iframe>
+                <div id="roti1" class="product">
+                  <img id="rotimg" src="assets/images/rotis/1.jpg">
+                  <p>Roti Pollo-Mostaza</p>
+                  <p class="description">Roti relleno de pollo preparado con salsa de mostaza y acompañado con papas.</p>
+                </div>
+                <div id="roti2" class="product">
+                  <img id="rotimg" src="assets/images/rotis/2.jpg">
+                  <p>Roti Jamón y queso</p>
+                  <p class="description">Roti preparado con jamón y queso manchego.</p>
+                </div>
+                <div id="roti3" class="product">
+                  <img id="rotimg" src="assets/images/rotis/3.jpg">
+                  <p>Roti chilaquiles</p>
+                  <p class="description">Roti relleno con totopos, salsa, queso manchego y crema.</p>
+                </div>
+                <div id="roti4" class="product">
+                  <img id="rotimg" src="assets/images/rotis/4.jpg">
+                  <p>Roti calabaza</p>
+                  <p class="description">Roti preparado con calabazitas y queso mozzarela.</p>
+                </div>
+                <div id="roti5" class="product">
+                  <img id="rotimg" src="assets/images/rotis/5.jpg">
+                  <p>Roti suizo</p>
+                  <p class="description">Roti relleno con una mezcla de quesos y condimentado con pimienta.</p>
+                </div>
+                <div id="roti6" class="product">
+                  <img id="rotimg" src="assets/images/rotis/6.jpg">
+                  <p>Roti champiñones</p>
+                  <p class="description">Roti relleno de champiñones con queso manchego.</p>
+                </div>
+                <div id="roti7" class="product">
+                  <img id="rotimg" src="assets/images/rotis/7.jpg">
+                  <p>Roti Vegetariano</p>
+                  <p class="description">Roti preparado con relleno de espinacas y queso crema.</p>
+                </div>
+                <div id="roti8" class="product">
+                  <img id="rotimg" src="assets/images/rotis/5.jpg">
+                  <p>Roti Chorizo</p>
+                  <p class="description">Roti relleno de chorizo, papas y queso manchego.</p>
+                </div>
+                <div id="roti9" class="product">
+                  <img id="rotimg" src="assets/images/rotis/4.jpg">
+                  <p>Roti Cheese & Steak</p>
+                  <p class="description">Roti relleno de carne con queso manchego y salsa agridulce.</p>
+                </div>
+                <div id="roti10" class="product">
+                  <img id="rotimg" src="assets/images/rotis/1.jpg">
+                  <p>Roti Champiñones agridulces</p>
+                  <p class="description">Roti relleno de champiñones con queso manchego y salsa agridulce.</p>
+                </div>
+                <!--<iframe src="buildroti.html"></iframe>-->
               </figure>
               <figure class="back"><iframe src="buildsalad.html"></iframe></figure>
               <figure class="right"><iframe src="buildsmooth.html"></iframe></figure>
