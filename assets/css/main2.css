@@ -1,0 +1,85 @@
+#index2{
+    background-image: url("../images/comidahd.jpg");
+}
+#Bolsa{
+	background-image: url("../images/fondoazul.jpg");
+}
+#Menu2{
+  background-image: url("../images/Roti.jpg"); 
+}
+#Nosotros{
+  background-image: url("../images/8.jpg"); 
+}
+
+#dbw{
+  	position: absolute;
+  	margin: auto;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	width: 200px;
+  	height: 200px;
+}
+
+#dbws{
+    margin-top: 400px;
+    margin-left: 100px;
+    margin-right: 4px;
+    margin-bottom: 100px;
+}
+
+#bdt{
+  	position: absolute;
+  	margin-left: 100px;
+  	margin-top: 100px;
+  	width: auto;
+  	height: auto;
+}
+
+#menu1{
+	background-color: rgba(0,0,0,.5);
+}
+
+li{
+	margin-right: 10em;
+	margin-left: 4em;
+}
+
+#footer {
+   	position:absolute;
+   	bottom:0;
+   	width:100%;
+   	height:60px;   /* Height of the footer */
+   	background-color: rgba(0,0,0,.5);
+   	color: white;
+	}
+#Sol{
+	color: white;
+}
+.equipo{
+	color: white;
+	font-size: 40px;
+	position: absolute;
+  	margin-left: 520px;
+  	margin-top: 50px;
+  	width: auto;
+  	height: auto;
+}
+
+.ComidaTitulo{
+  background-color: orange;
+  margin-right: 695px;
+}
+#Pack{
+  background-color: orange;
+  margin-right: 350px;
+}
+#Roti{
+  background-color: orange;
+  margin-right: 1010px;
+}
+
+#SucursalDiv{
+  background-color: orange;
+}
