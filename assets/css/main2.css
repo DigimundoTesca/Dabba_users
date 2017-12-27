@@ -18,8 +18,19 @@
   	right: 0;
   	bottom: 0;
   	left: 0;
-  	width: 200px;
-  	height: 200px;
+  	width: 400px;
+  	height: 400px;
+}
+#logo{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 200px;
+    color: rgba(255,99,71,.6);
 }
 
 #dbws{
@@ -31,10 +42,13 @@
 
 #bdt{
   	position: absolute;
-  	margin-left: 100px;
-  	margin-top: 100px;
+  	margin-left: 400px;
+  	margin-top: 110px;
   	width: auto;
   	height: auto;
+}
+.BolsaOrdena{
+  margin-left: 1000px;
 }
 
 #menu1{
@@ -82,4 +96,34 @@ li{
 
 #SucursalDiv{
   background-color: orange;
+}
+
+.hs{
+  background-color: orange;
+}
+
+#footeresp {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background-color: rgba(211, 75, 45, .8);
+    color: white;
+  }
+.logo{
+  position: absolute;
+  height: 30px;
+  margin-top: 10px;
+}
+.right{
+  position: right;
+}
+
+.labela{
+  color: rgba(211,75,45,.8);
+}
+
+.formulario{
+  background-color: white;
+  margin-right: 800px;
 }
