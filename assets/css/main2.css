@@ -1,5 +1,12 @@
-#index2{
+#ibg1{
     background-image: url("../images/comidahd.jpg");
+    height: auto;
+}
+#ibg2{
+    background-image: url("../images/hamburguesa.jpg");
+}
+#ibg3{
+    background-image: url("../images/meal.jpg");
 }
 #Bolsa{
 	background-image: url("../images/fondoazul.jpg");
@@ -8,21 +15,33 @@
   background-image: url("../images/Roti.jpg"); 
 }
 #Nosotros{
-  background-image: url("../images/8.jpg"); 
+  background-image: url("../images/meal.jpg"); 
 }
-
-#dbw{
-  	position: absolute;
-  	margin: auto;
+#registro{
+  background-image: url("../images/meal.jpg");
+}
+#sucursales{
+  background-image: url("../images/hamburguesa.jpg");
+}
+@media (min-width: 1200px){
+  #dbw{
+    position: absolute;
+    margin: auto;
   	top: 0;
   	right: 0;
   	bottom: 0;
   	left: 0;
   	width: 400px;
   	height: 400px;
-}
-#logo{
-    position: absolute;
+    z-index: 99;
+  }
+  .brand-logo{
+    width: 80px;
+    height: 50px;
+    color: orange;
+  }
+  #logo{
+    position: fixed;
     margin: auto;
     top: 0;
     right: 0;
@@ -30,37 +49,44 @@
     left: 0;
     width: 250px;
     height: 200px;
+    z-index: 99;
     color: rgba(255,99,71,.6);
-}
+  } 
 
-#dbws{
+  #dbws{
     margin-top: 400px;
     margin-left: 100px;
     margin-right: 4px;
     margin-bottom: 100px;
-}
+  }
 
-#bdt{
+  #bdt{
   	position: absolute;
-  	margin-left: 400px;
-  	margin-top: 110px;
-  	width: auto;
-  	height: auto;
-}
-.BolsaOrdena{
-  margin-left: 1000px;
-}
+  	margin: auto;
+  	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    height: 400px;
+  }
+  .BolsaOrdena{
+    margin-left: 1000px;
+  }
 
-#menu1{
-	background-color: rgba(0,0,0,.5);
-}
-
-li{
-	margin-right: 10em;
-	margin-left: 4em;
-}
-
-#footer {
+  #menu1{
+  	background-color: rgba(0,0,0,.5);
+  }
+  header{
+    position: fixed;
+    z-index: 3;
+    color: rgba(211,75,45,.8);
+  }
+  footer{
+    position: fixed;
+    z-index: 3;
+  }
+  #footer {
    	position:absolute;
    	bottom:0;
    	width:100%;
@@ -68,41 +94,49 @@ li{
    	background-color: rgba(0,0,0,.5);
    	color: white;
 	}
-#Sol{
-	color: white;
-}
-.equipo{
-	color: white;
-	font-size: 40px;
-	position: absolute;
-  	margin-left: 520px;
+  #Sol{
+	 color: white;
+  }
+  .equipo{
+	 color: white;
+	 font-size: 40px;
+	 position: absolute;
+  	margin-left: 670px;
   	margin-top: 50px;
   	width: auto;
   	height: auto;
-}
+  }
 
-.ComidaTitulo{
-  background-color: orange;
-  margin-right: 695px;
-}
-#Pack{
-  background-color: orange;
-  margin-right: 350px;
-}
-#Roti{
-  background-color: orange;
-  margin-right: 1010px;
-}
+  .ComidaTitulo{
+    background-color: orange;
+    font-size: 45px;
+    color: black;
+  }
+  .Pack{
+    background-color: orange;
+    font-size: 50px;
+    color: black;
+    margin-right: 300px;
+  }
+  #Roti{
+    background-color: orange;
+    font-size: 50px;
+    color: black;
+  }
+  #rotis{
+   padding-left: 50px;
+  }
 
-#SucursalDiv{
-  background-color: orange;
-}
+  #SucursalDiv{
+    background-color: orange;
+  }
 
-.hs{
-  background-color: orange;
-}
+  .hs{
+    margin-top: 58px;
+    background-color: orange;
+  }
 
-#footeresp {
+  #footeresp {
     position:absolute;
     bottom:0;
     width:100%;
@@ -110,20 +144,72 @@ li{
     background-color: rgba(211, 75, 45, .8);
     color: white;
   }
-.logo{
-  position: absolute;
-  height: 30px;
-  margin-top: 10px;
-}
-.right{
-  position: right;
-}
+  .logo{
+    position: absolute;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .right{
+    position: right;
+  }
 
-.labela{
-  color: rgba(211,75,45,.8);
-}
+  .labela{
+    color: rgba(211,75,45,.8);
+  }
 
-.formulario{
-  background-color: white;
-  margin-right: 800px;
+  .formulario{
+    background-color: grey;
+    margin-top: 70px;
+  }
+
+  .cuadro{
+    height: 500px;
+    width: 500px;
+  }
+  .tiporoti{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .tipoespecial{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .tescaojo{
+    width: 40px;
+    height: 50px;
+  }
+  .feis{
+    font-size: 20px;
+  }
+  .fotrow{
+    margin-bottom: 0px !important;
+  }
+
+
+  .indicators{
+    display: none;
+    visibility: hidden;
+  }
+  .nav-wrapper{
+    width: 1920px;
+    color: rgba(211,75,45,.8);
+  }
+  .navmenu{
+    margin-left: 100px;
+  }
+  .navnosotros{
+    margin-left: 200px;
+  }
+  .navsucursal{
+    margin-left: 200px;
+  }
+  .navregistro{
+    margin-left: 200px;
+  }
+  .navbolsa{
+    margin-left: 200px;
+  }
+  .navorden{
+    margin-left: 200px;
+  }
 }
