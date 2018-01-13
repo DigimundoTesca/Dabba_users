@@ -4217,7 +4217,6 @@
   }
 
   .product {
-    display: inline-block;
     padding-top: 20px;
     width: 220px;
   }
@@ -5198,4 +5197,9 @@
     font-weight: 600;
     letter-spacing: 0.15em;
     line-height: 3;
+  }
+
+  .Oculta{
+    display: none;
+    visibility: hidden;
   }

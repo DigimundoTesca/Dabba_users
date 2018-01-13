@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dabbawalla Menú</title>
+    <link rel="stylesheet" href="cubo/carousel/style.css" media="screen">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <div id="wrapper" class="menu">
+      <header id="header" class="alt">
+        <a href="index.html" class="logo">Dabbawalla</a>
+        <img src="assets/images/bici.png" alt="Logo de Dabbawalla">
+        <nav id="flomen">
+          <a href="#menu" title=""></a>
+        </nav>
+        <!-- Menu -->
+        <nav id="menu">
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pick.html">Escoge tu dabba</a></li>
+            <li><a href="plan.html">Planes</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="#" class="button nob" data-type="zoomin"><span>Inicia Sesión</span></a></li>
+            <li><a href="register.html" class="button fit">Resgistrate</a></li>
+          </ul>
+        </nav>
+        <nav id="mainmenu">
+          <!-- <a href="#menu" title="">Home</a> -->
+          <a href="index.html" class="men"><span> Home </span></a>
+          <!-- <a href="about.html" class="men"><span> Acerca de </span></a> -->
+          <a href="pick.html" class="men"><span> Escoge tu dabba </span></a>
+          <a href="plan.html" class="men"><span> Planes </span></a>
+          <a href="menu.html" class="men"><span> Menú </span></a>
+          <a href="contact.html" class="men"><span> Contacto </span></a>
+          <a href="" title=""></a>
+          <a href="" title=""></a>
+          <div class="menres nob">
+            <a href="#" class="button nob" data-type="zoomin"><span>Inicia Sesión</span></a>
+          </div>
+          <a href="" title="">ó</a>
+          <div class="menres">
+            <a href="register.html" class="button"><span>Resgistrate </span></a>
+          </div>
+          <a >   </a>
+        </nav>
+      </header>
+      <div class="overlay-container">
+        <div class="window-container zoomin">
+          <div class="colm">
+            <h1>LOGIN</h1>
+            <form class="logform" action="" method="post" accept-charset="utf-8">
+              <label>Usuario<input type="text" name="user" id="user" placeholder="Usuario"/></label>
+              <label>Contraseña<input type="text" name="pass" id="pass" placeholder="Contraseña" /></label>
+              <input type="submit" class="" name="submit" value="Login" />
+            </form>
+          </div>
+          <div class="colm2">
+            <h1>Registro</h1>
+            <p>Si aún no te has registrado, te invitamos a que visites nuestra sección de registro y disfrutes de todos los beneficios que tu cuenta te otorga.</p>
+            <a href="register.html" class="button"><span>Resgistrate </span></a>
+          </div>
+          <span class="closeres">X</span>
+        </div>
+      </div>
+      <div id="main">
+        <div class="row">
+          <div class="col s1 m1 l1 xl1" >
+            <ul id="show-buttons">
+              <li><button class="Broti" onclick="showRoti()">Roti</button></li>
+              <li><button class="Bensalada" onclick="showEnsaladas()">Ensaladas</button></li>
+              <li><button class="Bsmoothie" onclick="showSmoothies()">Licuados</button></li>
+              <li><button class="Bfruta" onclick="showFrutas()">Fruta</button></li>
+              <li><button class="Bjugos" onclick="showJugos()">Jugos</button></li>
+              
+            </ul>
+          </div>
+          <div class="col s5 m5 l5 xl5">
+            <div id="roti1" class="product rotis">
+              <img src="" alt="Imagen para roti">
+              <p>Roti Pollo-Mostaza</p>
+              <p class="description">Roti relleno de pollo preparado con salsa de mostaza y acompañado con papas.</p>
+            </div>
+            <div id="roti2" class="product rotis">
+              <img src="" alt="Imagen para roti">
+              <p>Roti Jamón y queso</p>
+              <p class="description">Roti preparado con jamón y queso manchego.</p>
+            </div>
+            <div id="roti3" class="product rotis">
+              <img src="" alt="Imagen para roti">
+              <p>Roti chilaquiles</p>
+              <p class="description">Roti relleno con totopos, salsa, queso manchego y crema.</p>
+            </div>
+            <div id="roti4" class="product rotis">
+              <img src="" alt="Imagen para roti">
+              <p>Roti calabaza</p>
+              <p class="description">Roti preparado con calabazitas y queso mozzarela.</p>
+            </div>
+            <div id="roti5" class="product rotis">
+              <img src="" alt="Imagen para roti">
+              <p>Roti suizo</p>
+              <p class="description">Roti relleno con una mezcla de quesos y condimentado con pimienta.</p>
+            </div>
+            <div id="roti6" class="product rotis">
+              <img src="" alt="Imagen para roti">
+              <p>Roti champiñones</p>
+              <p class="description">Roti relleno de champiñones con queso manchego.</p>
+            </div>
+            <div id="roti7" class="product rotis">
+              <img src="" alt="Imagen para roti">
+              <p>Roti Vegetariano</p>
+              <p class="description">Roti preparado con relleno de espinacas y queso crema.</p>
+            </div>
+            <div id="roti8" class="product rotis">
+              <img src="" alt="Imagen para roti">
+              <p>Roti Chorizo</p>
+              <p class="description">Roti relleno de chorizo, papas y queso manchego.</p>
+            </div>
+            <div id="roti9" class="product rotis">
+              <img src="" alt="Imagen para roti">
+              <p>Roti Cheese & Steak</p>
+              <p class="description">Roti relleno de carne con queso manchego y salsa agridulce.</p>
+            </div>
+            <div id="roti10" class="product rotis">
+              <img src="" alt="Imagen para roti">
+              <p>Roti Champiñones agridulces</p>
+              <p class="description">Roti relleno de champiñones con queso manchego y salsa agridulce.</p>
+            </div>
+            <div id="applesalad" class="product ensaladas">
+              <img src="" alt="Imagen producto">
+              <p>Ensalada de manzana</p>
+              <p class="description">Ensalada con crema, manzana, uvas pasas y azucar.</p>
+            </div>
+            <div id="berrysalad" class="product ensaladas">
+              <img src="" alt="Imagen producto">
+              <p>Ensalada de fresa</p>
+              <p class="description">Ensalada con crema, fresas y endulsada con azucar.</p>
+            </div>
+            <div id="celerysalad" class="product ensaladas">
+              <img src="" alt="Imagen producto">
+              <p>Ensalada de apio</p>
+              <p class="description">Ensalada con crema y apio.</p>
+            </div>
+            <div id="smoothbanana" class="product smoothie">
+              <img src="" alt="Imagen producto">
+              <p>Licuado de plátano</p>
+              <p class="description">Leche entera, plátano, vainilla y azucar.</p>
+            </div>
+            <div id="smoothberry" class="product smoothie">
+              <img src="" alt="Imagen producto">
+              <p>Licuado de fresa</p>
+              <p class="description">Leche entera, fresas, vainilla y azucar.</p>
+            </div>
+            <div id="smoothguaba" class="product smoothie">
+              <img src="" alt="Imagen producto">
+              <p>Licuado de guayaba</p>
+              <p class="description">Leche entera, guayaba y azucar.</p>
+            </div>
+            <div id="frmelon" class="product frutas">
+              <img src="" alt="Imagen producto">
+              <p>Melón</p>
+              <p class="description">Vaso de 200ml con melón picado.</p>
+            </div>
+            <div id="frpapaya" class="product frutas">
+              <img src="" alt="Imagen producto">
+              <p>Papaya</p>
+              <p class="description">Vaso de 200ml con papaya picada.</p>
+            </div>
+            <div id="frsandia" class="product frutas">
+              <img src="" alt="Imagen producto">
+              <p>Sandía</p>
+              <p class="description">Vaso de 200ml con sandía picada.</p>
+            </div>
+            <div id="juiceorange" class="product jugos">
+              <img src="" alt="Imagen producto">
+              <p>Jugo de naranja</p>
+              <p class="description">Vaso de 200ml.</p>
+            </div>
+            <div id="juicegrape" class="product jugos">
+              <img src="" alt="Imagen producto">
+              <p>Jugo de toronja</p>
+              <p class="description">Vaso de 200ml.</p>
+            </div>
+            <div id="juiceberry" class="product jugos">
+              <img src="" alt="Imagen producto">
+              <p>Jugo de arándano</p>
+              <p class="description">Vaso de 200ml.</p>
+            </div>
+          </div>
+          <div class="carto col s2 m2 l3 xl4" >
+            <h2>tu pedido</h2>
+            <table id="pay">
+              <tbody>
+                <tr>
+                  <td>Roti</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Agua</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Fruta</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Jugos</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>            
+          </div>
+        </div>
+        <a href="pay.html" class="button esp"><span>ARMA TU DABBA</span></a>
+      </div>
+      <div id="contact">
+        <div class="col1">
+          <img src=" alt="Logo de Dabbawalla">
+          <p>20 de Noviembre #32,<br>San Lucas Tepelacalco,<br>Tlalnepantla Edo. de México <br>CP 54055</p>
+        </div>
+        <div class="col2">
+          <h3>home</h3>
+          <a href="plan.html" title="Planes">Consigue un plan</a>
+          <a href="menu.html" title="Menú">Conoce nuestro menú</a>
+          <a href="contact.html" title="Dudas">¿Tienes alguna duda?</a>
+        </div>
+        <div class="col3">
+          <h3>Planes</h3>
+          <a href="plan.html" title="Planes">Dabba Coins</a>
+          <a href="plan.html" title="Planes">Dabba Wallet</a>
+          <a href="plan.html" title="Planes">Planes</a>
+        </div>
+        <div class="col4">
+          <h3>Contacto</h3>
+          <a href="contact.html" title="">Contáctanos</a>
+          <!-- <a href="#" title="">Mapa del sitio</a> -->
+        </div>
+        <div class="col5">
+          <a href="pick.html" class=""><span>¡Arma tu <br> dabba!</span></a>
+        </div>
+        <div class="col6">
+          <ul class="icons">
+            <li><a rel="nofollow" target="_blank" href="" class="icon alt fa-facebook"><span class="label"></span></a></li>
+            <li><a rel="nofollow" target="_blank" href="" class="icon alt fa-github"><span class="label"></span></a></li>
+            <li><a href="index.html" class="icon alt fa-home"><span class="label"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <img class="bord" src="assets/images/image/flechas.png" alt="Borde de flecha">
+      <p><br>&copy; 2017 Dabbawalla. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="assets/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
+    <script type="text/javascript" src="assets/js/demo.js"></script>
+    <script>
+    function visible() {
+    document.getElementById("frontdisplay").style.visibility = "hidden";
+    }
+    </script>
+    <script>
+    function visible1() {
+    document.getElementById("frontdisplay").style.visibility = "visible";
+    }
+    function showRoti(){
+    var jol = document.getElementsByClassName("rotis");
+    var i;
+    for (i = 0; i < jol.length; i++) {
+    jol[i].classList.remove("Oculta");
+    }
+    var jol = document.getElementsByClassName("ensaladas");
+    for (let i=0; i< jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("smoothie");
+    for (let i=0; i< jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("frutas");
+    for (let i=0; i<jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("jugos");
+    for (let i=0; i<jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    }
+    function showEnsaladas(){
+    var jol = document.getElementsByClassName("rotis");
+    var i;
+    for (i = 0; i < jol.length; i++) {
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("ensaladas");
+    for (let i=0; i< jol.length; i++){
+    jol[i].classList.remove("Oculta");
+    }
+    var jol = document.getElementsByClassName("smoothie");
+    for (let i=0; i< jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("frutas");
+    for (let i=0; i<jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("jugos");
+    for (let i=0; i<jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    }
+    function showSmoothies(){
+    var jol = document.getElementsByClassName("rotis");
+    var i;
+    for (i = 0; i < jol.length; i++) {
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("ensaladas");
+    for (let i=0; i< jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("smoothie");
+    for (let i=0; i< jol.length; i++){
+    jol[i].classList.remove("Oculta");
+    }
+    var jol = document.getElementsByClassName("frutas");
+    for (let i=0; i<jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("jugos");
+    for (let i=0; i<jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    }
+    function showFrutas(){
+    var jol = document.getElementsByClassName("rotis");
+    var i;
+    for (i = 0; i < jol.length; i++) {
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("ensaladas");
+    for (let i=0; i< jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("smoothie");
+    for (let i=0; i< jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("frutas");
+    for (let i=0; i<jol.length; i++){
+    jol[i].classList.remove("Oculta");
+    }
+    var jol = document.getElementsByClassName("jugos");
+    for (let i=0; i<jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    }
+    function showJugos(){
+    var jol = document.getElementsByClassName("rotis");
+    var i;
+    for (i = 0; i < jol.length; i++) {
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("ensaladas");
+    for (let i=0; i< jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("smoothie");
+    for (let i=0; i< jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("frutas");
+    for (let i=0; i<jol.length; i++){
+    jol[i].classList.add("Oculta");
+    }
+    var jol = document.getElementsByClassName("jugos");
+    for (let i=0; i<jol.length; i++){
+    jol[i].classList.remove("Oculta");
+    }
+    }
+    </script>
+    <!--Cube-->
+    <script src="cubo/carousel/utils.js"></script>
+    <script src="cubo/carousel/rotate-box.js"></script>
+  </body>
+</html>
+<!-- var jol = document.getElementsByClassName("rotis");
+var i;
+for (i = 0; i < jol.length; i++) {
+jol[i].classList.add("Oculta");
+} -->
